@@ -1,0 +1,11 @@
+# CUDA_VISIBLE_DEVICES=5 /anaconda3/envs/brain/bin/python /eegall/main.py --data='DEAP' --loss='sce' --graph='base' --batch=38 --limit=1 --seed=74 --valpage=6 --kfold=10 --maxiter=5000 --lr=0.00005 --alpha=0.0008 --norm=1 --freq='BH' --ckpoint=0 --tylabel='Arousal' --modeldir=8 &
+# CUDA_VISIBLE_DEVICES=3 /anaconda3/envs/brain/bin/python /eegall/main.py --data='DEAP' --loss='sce' --graph='base' --batch=38 --limit=1 --seed=74 --valpage=6 --kfold=10 --maxiter=5000 --lr=0.00005 --alpha=0.0008 --norm=1 --freq='BH' --ckpoint=0 --tylabel='Valence' --modeldir=8 &
+
+# CUDA_VISIBLE_DEVICES=4 /anaconda3/envs/brain/bin/python /eegall/main.py --data='FACED' --loss='sce' --graph='base' --batch=11 --limit=1 --seed=74 --valpage=6 --kfold=10 --maxiter=5000 --lr=0.00005 --alpha=0.0008 --norm=1 --freq='BH' --ckpoint=0 --tylabel='Arousal' --modeldir=8 &
+# CUDA_VISIBLE_DEVICES=4 /anaconda3/envs/brain/bin/python /eegall/main.py --data='FACED' --loss='sce' --graph='base' --batch=11 --limit=1 --seed=74 --valpage=6 --kfold=10 --maxiter=5000 --lr=0.00005 --alpha=0.0008 --norm=1 --freq='BH' --ckpoint=0 --tylabel='Valence' --modeldir=8 &
+
+CUDA_VISIBLE_DEVICES=6 /anaconda3/envs/brain/bin/python /eegall/main.py --data='FACED' --loss='sce' --graph='base' --batch=11 --limit=1 --seed=74 --valpage=6 --kfold=10 --maxiter=5000 --lr=0.00005 --alpha=0.0008 --norm=1 --freq='BH' --ckpoint=0 --tylabel='Arousal' --modeldir=10 --ablation=1 &
+CUDA_VISIBLE_DEVICES=6 /anaconda3/envs/brain/bin/python /eegall/main.py --data='FACED' --loss='sce' --graph='base' --batch=11 --limit=1 --seed=74 --valpage=6 --kfold=10 --maxiter=5000 --lr=0.00005 --alpha=0.0008 --norm=1 --freq='BH' --ckpoint=0 --tylabel='Valence' --modeldir=10 --ablation=1 &
+
+CUDA_VISIBLE_DEVICES=2 /anaconda3/envs/brain/bin/python /eegall/main.py --data='DEAP' --loss='sce' --graph='base' --batch=38 --limit=1 --seed=74 --valpage=6 --kfold=10 --maxiter=5000 --lr=0.00005 --alpha=0.0008 --norm=1 --freq='BH' --ckpoint=0 --tylabel='Arousal' --modeldir=10 --ablation=1 &
+CUDA_VISIBLE_DEVICES=2 /anaconda3/envs/brain/bin/python /eegall/main.py --data='DEAP' --loss='sce' --graph='base' --batch=38 --limit=1 --seed=74 --valpage=6 --kfold=10 --maxiter=5000 --lr=0.00005 --alpha=0.0008 --norm=1 --freq='BH' --ckpoint=0 --tylabel='Valence' --modeldir=10 --ablation=1 &

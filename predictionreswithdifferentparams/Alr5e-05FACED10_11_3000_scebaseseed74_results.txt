@@ -1,0 +1,373 @@
+
+subject 0 Avgacc: 0.9533333333333334 Avgfscore: 0.95
+Max acc:1.0, Max f score:1.0
+
+subject 1 Avgacc: 0.9666666666666668 Avgfscore: 0.9438330170777988
+Max acc:1.0, Max f score:1.0
+
+subject 2 Avgacc: 0.95 Avgfscore: 0.9210526315789472
+Max acc:1.0, Max f score:1.0
+
+subject 3 Avgacc: 0.9433333333333334 Avgfscore: 0.9550375939849625
+Max acc:1.0, Max f score:1.0
+
+subject 4 Avgacc: 0.96 Avgfscore: 0.95
+Max acc:1.0, Max f score:1.0
+
+subject 5 Avgacc: 0.95 Avgfscore: 0.948735632183908
+Max acc:1.0, Max f score:1.0
+
+subject 6 Avgacc: 0.9733333333333333 Avgfscore: 0.9638095238095238
+Max acc:1.0, Max f score:1.0
+
+subject 7 Avgacc: 0.9333333333333333 Avgfscore: 0.9467328370554178
+Max acc:1.0, Max f score:1.0
+
+subject 8 Avgacc: 0.9466666666666667 Avgfscore: 0.9233333333333335
+Max acc:1.0, Max f score:1.0
+
+subject 9 Avgacc: 0.9466666666666667 Avgfscore: 0.9212341197822141
+Max acc:1.0, Max f score:1.0
+
+subject 10 Avgacc: 0.95 Avgfscore: 0.9351097178683385
+Max acc:1.0, Max f score:1.0
+
+subject 11 Avgacc: 0.9633333333333333 Avgfscore: 0.9577500000000001
+Max acc:1.0, Max f score:1.0
+
+subject 12 Avgacc: 0.95 Avgfscore: 0.9149019607843136
+Max acc:1.0, Max f score:1.0
+
+subject 13 Avgacc: 0.95 Avgfscore: 0.9314285714285713
+Max acc:1.0, Max f score:1.0
+
+subject 14 Avgacc: 0.9566666666666667 Avgfscore: 0.9525925925925925
+Max acc:1.0, Max f score:1.0
+
+subject 15 Avgacc: 0.9566666666666667 Avgfscore: 0.9497500000000001
+Max acc:1.0, Max f score:1.0
+
+subject 16 Avgacc: 0.9566666666666667 Avgfscore: 0.951851851851852
+Max acc:1.0, Max f score:1.0
+
+subject 17 Avgacc: 0.9466666666666667 Avgfscore: 0.9470833333333333
+Max acc:1.0, Max f score:1.0
+
+subject 18 Avgacc: 0.95 Avgfscore: 0.9459259259259258
+Max acc:1.0, Max f score:1.0
+
+subject 19 Avgacc: 0.9400000000000001 Avgfscore: 0.9470588235294117
+Max acc:1.0, Max f score:1.0
+
+subject 20 Avgacc: 0.9466666666666667 Avgfscore: 0.949993890518084
+Max acc:1.0, Max f score:1.0
+
+subject 21 Avgacc: 0.9433333333333334 Avgfscore: 0.9546689303904923
+Max acc:1.0, Max f score:1.0
+
+subject 22 Avgacc: 0.9566666666666667 Avgfscore: 0.9467741935483872
+Max acc:1.0, Max f score:1.0
+
+subject 23 Avgacc: 0.9466666666666667 Avgfscore: 0.936888888888889
+Max acc:1.0, Max f score:1.0
+
+subject 24 Avgacc: 0.9433333333333334 Avgfscore: 0.937037037037037
+Max acc:1.0, Max f score:1.0
+
+subject 25 Avgacc: 0.9433333333333334 Avgfscore: 0.9281159420289855
+Max acc:1.0, Max f score:1.0
+
+subject 26 Avgacc: 0.96 Avgfscore: 0.921091811414392
+Max acc:1.0, Max f score:1.0
+
+subject 27 Avgacc: 0.96 Avgfscore: 0.95
+Max acc:1.0, Max f score:1.0
+
+subject 28 Avgacc: 0.9633333333333333 Avgfscore: 0.9388888888888889
+Max acc:1.0, Max f score:1.0
+
+subject 29 Avgacc: 0.9633333333333333 Avgfscore: 0.9580901856763926
+Max acc:1.0, Max f score:1.0
+
+subject 30 Avgacc: 0.9433333333333334 Avgfscore: 0.95109243697479
+Max acc:1.0, Max f score:1.0
+
+subject 31 Avgacc: 0.9733333333333334 Avgfscore: 0.9647315078236132
+Max acc:1.0, Max f score:1.0
+
+subject 32 Avgacc: 0.9433333333333334 Avgfscore: 0.9358090185676392
+Max acc:1.0, Max f score:1.0
+
+subject 33 Avgacc: 0.9533333333333334 Avgfscore: 0.95
+Max acc:1.0, Max f score:1.0
+
+subject 34 Avgacc: 0.95 Avgfscore: 0.9578853046594983
+Max acc:1.0, Max f score:1.0
+
+subject 35 Avgacc: 0.9666666666666666 Avgfscore: 0.9625641025641025
+Max acc:1.0, Max f score:1.0
+
+subject 36 Avgacc: 0.9733333333333334 Avgfscore: 0.9692307692307693
+Max acc:1.0, Max f score:1.0
+
+subject 37 Avgacc: 0.95 Avgfscore: 0.9314285714285713
+Max acc:1.0, Max f score:1.0
+
+subject 38 Avgacc: 0.96 Avgfscore: 0.96
+Max acc:1.0, Max f score:1.0
+
+subject 39 Avgacc: 0.9366666666666668 Avgfscore: 0.9333333333333333
+Max acc:1.0, Max f score:1.0
+
+subject 40 Avgacc: 0.96 Avgfscore: 0.95
+Max acc:1.0, Max f score:1.0
+
+subject 41 Avgacc: 0.9566666666666667 Avgfscore: 0.951851851851852
+Max acc:1.0, Max f score:1.0
+
+subject 42 Avgacc: 0.96 Avgfscore: 0.9560334528076464
+Max acc:1.0, Max f score:1.0
+
+subject 43 Avgacc: 0.97 Avgfscore: 0.9632183908045977
+Max acc:1.0, Max f score:1.0
+
+subject 44 Avgacc: 0.9566666666666667 Avgfscore: 0.9133333333333333
+Max acc:1.0, Max f score:1.0
+
+subject 45 Avgacc: 0.95 Avgfscore: 0.9418060200668897
+Max acc:1.0, Max f score:1.0
+
+subject 46 Avgacc: 0.95 Avgfscore: 0.9516129032258064
+Max acc:1.0, Max f score:1.0
+
+subject 47 Avgacc: 0.95 Avgfscore: 0.9482758620689655
+Max acc:1.0, Max f score:1.0
+
+subject 48 Avgacc: 0.95 Avgfscore: 0.914655172413793
+Max acc:1.0, Max f score:1.0
+
+subject 49 Avgacc: 0.9466666666666667 Avgfscore: 0.9466666666666667
+Max acc:1.0, Max f score:1.0
+
+subject 50 Avgacc: 0.96 Avgfscore: 0.9443932411674346
+Max acc:1.0, Max f score:1.0
+
+subject 51 Avgacc: 0.9666666666666666 Avgfscore: 0.9545454545454545
+Max acc:1.0, Max f score:1.0
+
+subject 52 Avgacc: 0.95 Avgfscore: 0.9451851851851852
+Max acc:1.0, Max f score:1.0
+
+subject 53 Avgacc: 0.9566666666666667 Avgfscore: 0.9527806803668873
+Max acc:1.0, Max f score:1.0
+
+subject 54 Avgacc: 0.9533333333333334 Avgfscore: 0.944551724137931
+Max acc:1.0, Max f score:1.0
+
+subject 55 Avgacc: 0.9666666666666666 Avgfscore: 0.9604166666666668
+Max acc:1.0, Max f score:1.0
+
+subject 56 Avgacc: 0.95 Avgfscore: 0.9482758620689655
+Max acc:1.0, Max f score:1.0
+
+subject 57 Avgacc: 0.9366666666666668 Avgfscore: 0.9303703703703704
+Max acc:1.0, Max f score:1.0
+
+subject 58 Avgacc: 0.95 Avgfscore: 0.9435013262599469
+Max acc:1.0, Max f score:1.0
+
+subject 59 Avgacc: 0.9433333333333334 Avgfscore: 0.9301075268817204
+Max acc:1.0, Max f score:1.0
+
+subject 60 Avgacc: 0.9400000000000001 Avgfscore: 0.9428571428571428
+Max acc:1.0, Max f score:1.0
+
+subject 61 Avgacc: 0.9533333333333334 Avgfscore: 0.9447741935483871
+Max acc:1.0, Max f score:1.0
+
+subject 62 Avgacc: 0.9533333333333334 Avgfscore: 0.9447741935483871
+Max acc:1.0, Max f score:1.0
+
+subject 63 Avgacc: 0.9400000000000001 Avgfscore: 0.9338112305854243
+Max acc:1.0, Max f score:1.0
+
+subject 64 Avgacc: 0.95 Avgfscore: 0.940909090909091
+Max acc:1.0, Max f score:1.0
+
+subject 65 Avgacc: 0.9466666666666667 Avgfscore: 0.9555555555555555
+Max acc:1.0, Max f score:1.0
+
+subject 66 Avgacc: 0.9566666666666667 Avgfscore: 0.9506203473945408
+Max acc:1.0, Max f score:1.0
+
+subject 67 Avgacc: 0.9533333333333334 Avgfscore: 0.9363636363636363
+Max acc:1.0, Max f score:1.0
+
+subject 68 Avgacc: 0.96 Avgfscore: 0.94375
+Max acc:1.0, Max f score:1.0
+
+subject 69 Avgacc: 0.9233333333333335 Avgfscore: 0.929817444219067
+Max acc:1.0, Max f score:1.0
+
+subject 70 Avgacc: 0.9533333333333334 Avgfscore: 0.9348694316436251
+Max acc:1.0, Max f score:1.0
+
+subject 71 Avgacc: 0.9566666666666667 Avgfscore: 0.9565517241379311
+Max acc:1.0, Max f score:1.0
+
+subject 72 Avgacc: 0.9633333333333333 Avgfscore: 0.9537267080745341
+Max acc:1.0, Max f score:1.0
+
+subject 73 Avgacc: 0.9400000000000001 Avgfscore: 0.9307692307692307
+Max acc:1.0, Max f score:1.0
+
+subject 74 Avgacc: 0.9366666666666668 Avgfscore: 0.9325123152709359
+Max acc:1.0, Max f score:1.0
+
+subject 75 Avgacc: 0.9466666666666667 Avgfscore: 0.9178268251273345
+Max acc:1.0, Max f score:1.0
+
+subject 76 Avgacc: 0.9466666666666667 Avgfscore: 0.9029885057471265
+Max acc:1.0, Max f score:1.0
+
+subject 77 Avgacc: 0.9666666666666666 Avgfscore: 0.9666666666666666
+Max acc:1.0, Max f score:1.0
+
+subject 78 Avgacc: 0.9533333333333334 Avgfscore: 0.9281306715063522
+Max acc:1.0, Max f score:1.0
+
+subject 79 Avgacc: 0.97 Avgfscore: 0.9523297491039425
+Max acc:1.0, Max f score:1.0
+
+subject 80 Avgacc: 0.9666666666666666 Avgfscore: 0.960551724137931
+Max acc:1.0, Max f score:1.0
+
+subject 81 Avgacc: 0.9466666666666667 Avgfscore: 0.9495833333333333
+Max acc:1.0, Max f score:1.0
+
+subject 82 Avgacc: 0.9566666666666667 Avgfscore: 0.9551724137931036
+Max acc:1.0, Max f score:1.0
+
+subject 83 Avgacc: 0.8233333333333333 Avgfscore: 0.8233326272035949
+Max acc:0.9333333333333333, Max f score:0.9333333333333333
+
+subject 84 Avgacc: 0.9666666666666666 Avgfscore: 0.9539170506912441
+Max acc:1.0, Max f score:1.0
+
+subject 85 Avgacc: 0.9466666666666667 Avgfscore: 0.9272727272727274
+Max acc:1.0, Max f score:1.0
+
+subject 86 Avgacc: 0.9433333333333334 Avgfscore: 0.9143859649122806
+Max acc:1.0, Max f score:1.0
+
+subject 87 Avgacc: 0.97 Avgfscore: 0.9660049627791564
+Max acc:1.0, Max f score:1.0
+
+subject 88 Avgacc: 0.9466666666666667 Avgfscore: 0.95
+Max acc:1.0, Max f score:1.0
+
+subject 89 Avgacc: 0.9566666666666667 Avgfscore: 0.9551724137931036
+Max acc:1.0, Max f score:1.0
+
+subject 90 Avgacc: 0.9633333333333333 Avgfscore: 0.9580901856763926
+Max acc:1.0, Max f score:1.0
+
+subject 91 Avgacc: 0.95 Avgfscore: 0.9498850574712645
+Max acc:1.0, Max f score:1.0
+
+subject 92 Avgacc: 0.9733333333333334 Avgfscore: 0.96
+Max acc:1.0, Max f score:1.0
+
+subject 93 Avgacc: 0.9366666666666668 Avgfscore: 0.9296296296296296
+Max acc:1.0, Max f score:1.0
+
+subject 94 Avgacc: 0.96 Avgfscore: 0.9538461538461538
+Max acc:1.0, Max f score:1.0
+
+subject 95 Avgacc: 0.9166666666666666 Avgfscore: 0.8956043956043956
+Max acc:1.0, Max f score:1.0
+
+subject 96 Avgacc: 0.97 Avgfscore: 0.9679802955665024
+Max acc:1.0, Max f score:1.0
+
+subject 97 Avgacc: 0.9333333333333332 Avgfscore: 0.9312569521690769
+Max acc:1.0, Max f score:1.0
+
+subject 98 Avgacc: 0.9433333333333334 Avgfscore: 0.9358090185676392
+Max acc:1.0, Max f score:1.0
+
+subject 99 Avgacc: 0.9433333333333334 Avgfscore: 0.9266862170087975
+Max acc:1.0, Max f score:1.0
+
+subject 100 Avgacc: 0.97 Avgfscore: 0.9640000000000001
+Max acc:1.0, Max f score:1.0
+
+subject 101 Avgacc: 0.96 Avgfscore: 0.95
+Max acc:1.0, Max f score:1.0
+
+subject 102 Avgacc: 0.9400000000000001 Avgfscore: 0.9361964464464465
+Max acc:1.0, Max f score:1.0
+
+subject 103 Avgacc: 0.9466666666666667 Avgfscore: 0.9536945812807882
+Max acc:1.0, Max f score:1.0
+
+subject 104 Avgacc: 0.9566666666666667 Avgfscore: 0.9484263674614306
+Max acc:1.0, Max f score:1.0
+
+subject 105 Avgacc: 0.96 Avgfscore: 0.9388794567062819
+Max acc:1.0, Max f score:1.0
+
+subject 106 Avgacc: 0.9566666666666667 Avgfscore: 0.9298850574712644
+Max acc:1.0, Max f score:1.0
+
+subject 107 Avgacc: 0.9566666666666667 Avgfscore: 0.9467741935483872
+Max acc:1.0, Max f score:1.0
+
+subject 108 Avgacc: 0.9633333333333333 Avgfscore: 0.9266666666666665
+Max acc:1.0, Max f score:1.0
+
+subject 109 Avgacc: 0.96 Avgfscore: 0.9571428571428571
+Max acc:1.0, Max f score:1.0
+
+subject 110 Avgacc: 0.9466666666666667 Avgfscore: 0.9349325337331335
+Max acc:1.0, Max f score:1.0
+
+subject 111 Avgacc: 0.9833333333333334 Avgfscore: 0.9800000000000001
+Max acc:1.0, Max f score:1.0
+
+subject 112 Avgacc: 0.9466666666666667 Avgfscore: 0.936888888888889
+Max acc:1.0, Max f score:1.0
+
+subject 113 Avgacc: 0.96 Avgfscore: 0.9571428571428571
+Max acc:1.0, Max f score:1.0
+
+subject 114 Avgacc: 0.9733333333333334 Avgfscore: 0.96
+Max acc:1.0, Max f score:1.0
+
+subject 115 Avgacc: 0.9333333333333332 Avgfscore: 0.9250686813186814
+Max acc:1.0, Max f score:1.0
+
+subject 116 Avgacc: 0.9466666666666667 Avgfscore: 0.9457142857142857
+Max acc:1.0, Max f score:1.0
+
+subject 117 Avgacc: 0.9566666666666667 Avgfscore: 0.9551724137931036
+Max acc:1.0, Max f score:1.0
+
+subject 118 Avgacc: 0.93 Avgfscore: 0.917142857142857
+Max acc:1.0, Max f score:1.0
+
+subject 119 Avgacc: 0.9800000000000001 Avgfscore: 0.976923076923077
+Max acc:1.0, Max f score:1.0
+
+subject 120 Avgacc: 0.9666666666666666 Avgfscore: 0.96
+Max acc:1.0, Max f score:1.0
+
+subject 121 Avgacc: 0.9566666666666667 Avgfscore: 0.9434782608695652
+Max acc:1.0, Max f score:1.0
+
+subject 122 Avgacc: 0.96 Avgfscore: 0.9538461538461538
+Max acc:1.0, Max f score:1.0
+all subject avg max acc:0.9994579945799459
+ all subject avg avg acc:0.9523306233062333
+ avg max fs:0.9994579945799459
+ avg avg fs:0.9434812145737107
