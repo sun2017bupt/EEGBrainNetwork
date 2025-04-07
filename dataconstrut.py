@@ -121,49 +121,6 @@ def feature_extract(base_freq, f, harm_freq, zxx):
         flow = int(mean - std)
         harm_flow_list.append(flow)
         harm_fhigh_list.append(fhigh)
-
-    # base_flow = int(sum(base_flow_list) / len(base_flow_list))
-    # base_fhigh = int(sum(base_fhigh_list) / len(base_fhigh_list))
-    # # Harmonic freq psd
-    # harm_m = []
-    # harm_s = []
-    # for i in range(channel_num):
-    #     a = []
-    #     b = []
-    #     for j in range(8):
-    #         m = np.mean(harm_freq[:,i,j])
-    #         s = np.std(harm_freq[:,i,j])
-    #         a.append(m)
-    #         b.append(s)
-    #     a = np.mean(a)
-    #     b = np.mean(b)
-    #     harm_m.append(a)
-    #     harm_s.append(b)
-    # mean = np.mean(harm_m)
-    # std = np.mean(harm_s)
-    # harm_fhigh = int(mean+3*std)
-    # harm_flow = int(mean-3*std)
-    # if harm_flow < 0:
-    #     harm_flow = 0
-    # if harm_fhigh > max(f):
-    #     harm_fhigh = max(f)
-
-    # freq_select = [base_flow, base_fhigh, harm_flow, harm_fhigh]
-    # freq_select = sorted(freq_select)
-
-    # base_flow = freq_select[0]
-    # if freq_select[1] == 0:
-    #     base_fhigh = freq_select[2]
-    #     harm_flow = freq_select[2]
-    #     harm_fhigh = freq_select[3]
-    # elif freq_select[2] == freq_select[3]:
-    #     base_fhigh = freq_select[1]
-    #     harm_flow = freq_select[1]
-    #     harm_fhigh = freq_select[2]
-    # else:
-    #     base_fhigh = freq_select[1]
-    #     harm_flow = freq_select[2]
-    #     harm_fhigh = freq_select[3]
     # Base
     base_de_features = []
     harmon_de_features = []
@@ -259,13 +216,13 @@ if __name__ == '__main__':
     channel_num = 40
     time = 60
 
-    raw_dir = "/home/sjf/DEAP/data_preprocessed_python/data_preprocessed_python/raw/"
+    raw_dir = "/DEAP/data_preprocessed_python/data_preprocessed_python/raw/"
     file_names = os.listdir(raw_dir)
     all_base_de_features = []
     all_harmon_de_features = []
     all_labels = []
     for filename in file_names:
-        filepath = "/home/sjf/DEAP/data_preprocessed_python/data_preprocessed_python/raw/"+str(filename)
+        filepath = "/DEAP/data_preprocessed_python/data_preprocessed_python/raw/"+str(filename)
         trial = read_eeg_signal_from_file(filepath)
         data = trial['data']
         labels = trial['labels']
@@ -282,10 +239,10 @@ if __name__ == '__main__':
     all_harmon_de_features = torch.tensor(all_harmon_de_features)
     all_labels=torch.stack(all_labels)
 
-    torch.save(all_base_de_features,'/home/sjf/eegall/data/DEAP/all_ori13base_de_features.pt')
-    torch.save(all_harmon_de_features,'/home/sjf/eegall/data/DEAP/all_ori13harmon_de_features.pt')
-    torch.save(all_labels,'/home/sjf/eegall/data/DEAP/all_ori13labels.pt')
+    torch.save(all_base_de_features,'/eegall/data/DEAP/all_ori13base_de_features.pt')
+    torch.save(all_harmon_de_features,'eegall/data/DEAP/all_ori13harmon_de_features.pt')
+    torch.save(all_labels,'/eegall/data/DEAP/all_ori13labels.pt')
 
     base_graph, harm_graph = phase_graph(all_base_de_features, all_harmon_de_features)
-    torch.save(base_graph,'/home/sjf/eegall/data/DEAP/ori13base_graph.pt')
-    torch.save(harm_graph,'/home/sjf/eegall/data/DEAP/ori13harm_graph.pt')
+    torch.save(base_graph,'/eegall/data/DEAP/ori13base_graph.pt')
+    torch.save(harm_graph,'/eegall/data/DEAP/ori13harm_graph.pt')
