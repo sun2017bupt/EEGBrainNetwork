@@ -34,7 +34,7 @@ This repository contains the source code, experiment logs, and results for our a
   - `model.py`, `tgmodel.py`, `valmodel.py`, `fremodel.py`: Core model architectures.
   - `dataconstrut.py`, `EEGData.py`, `faceddata.py`: EEG data loading and preprocessing modules.
   - `customloss.py`: Custom loss functions used during training.
-  - `analysismodel.ipynb`, `explainmodel.ipynb`: Jupyter notebooks for model analysis and interpretability.
+  - `analysismodel.ipynb`, `figout.ipynb`: Jupyter notebooks for model analysis and interpretability.
   - `requirements.txt`: Python package dependencies.
 
 ## 🧪 Experimental Settings
