@@ -213,13 +213,13 @@ def data_process(data,sample_rate,exp_num,channel_num):
 if __name__ == '__main__':
     device = torch.device('cuda:0' if torch.cuda.is_available() else 'cpu')
 
-    raw_dir = "/home/sjf/brainnet/FACED/Processed_data/"
+    raw_dir = "/brainnet/FACED/Processed_data/"
     file_names = os.listdir(raw_dir)
     all_base_de_features = []
     all_harmon_de_features = []
     all_labels = []
     for filename in file_names:
-        filepath = "/home/sjf/brainnet/FACED/Processed_data/"+str(filename)
+        filepath = "/brainnet/FACED/Processed_data/"+str(filename)
         trial = read_eeg_signal_from_file(filepath)
         data = trial
         print(f"******* Processing on file {filename} ********")
@@ -235,10 +235,10 @@ if __name__ == '__main__':
     all_harmon_de_features = torch.tensor(all_harmon_de_features, dtype=torch.float)
     all_labels=torch.tensor(all_labels, dtype=torch.float)
 
-    torch.save(all_base_de_features,'/home/sjf/brainnet/eegall/data/all_base3_de_features.pt')
-    torch.save(all_harmon_de_features,'/home/sjf/brainnet/eegall/data/all_harmon3_de_features.pt')
-    torch.save(all_labels,'/home/sjf/brainnet/eegall/data/all_3labels.pt')
+    torch.save(all_base_de_features,'/brainnet/eegall/data/all_base3_de_features.pt')
+    torch.save(all_harmon_de_features,'/brainnet/eegall/data/all_harmon3_de_features.pt')
+    torch.save(all_labels,'/brainnet/eegall/data/all_3labels.pt')
 
     base_graph, harm_graph = phase_graph(all_base_de_features, all_harmon_de_features)
-    torch.save(base_graph,'/home/sjf/brainnet/eegall/data/base3_graph.pt')
-    torch.save(harm_graph,'/home/sjf/brainnet/eegall/data/harm3_graph.pt')
+    torch.save(base_graph,'/brainnet/eegall/data/base3_graph.pt')
+    torch.save(harm_graph,'/brainnet/eegall/data/harm3_graph.pt')
