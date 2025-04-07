@@ -180,7 +180,7 @@ def cross_validation(subject,base_data, harm_data, graph, labels, seed, device):
         harm_val_data = torch.tensor(harm_val_data)
 
         # Model define
-        model_path = '/home/sjf/eegall/withlimits/FACED/FACED10_13_3000_scebaseseed74_trained_models.pt'
+        model_path = '/eegall/withlimits/FACED/FACED10_13_3000_scebaseseed74_trained_models.pt'
         model = MyMixture(input_dim,output_dim,input_channel,output_channel,input_size,hidden_size,in_channels, out_channels,K)
         model.load_state_dict(torch.load(model_path)[0][0])
 
@@ -215,11 +215,11 @@ def cross_validation(subject,base_data, harm_data, graph, labels, seed, device):
     # elif args.abtype == 'NTG':
     #     filename = 'NTG'+filename
     # if args.limit:
-    #     filepath = '/home/sjf/eegall/withlimits/'+filename
+    #     filepath = '/eegall/withlimits/'+filename
     # else:
-    #     filepath = '/home/sjf/eegall/nolimits/'+filename
+    #     filepath = '/eegall/nolimits/'+filename
     # # all loss record
-    # loss_path = '/home/sjf/eegall/lossre/'
+    # loss_path = '/eegall/lossre/'
     # if args.data == 'DEAP':
     #     loss_path = loss_path + 'DEAPloss.pt'
     # elif args.data == 'FACED':
@@ -262,26 +262,26 @@ def scaled_eeg(base_x, harm_x):
 if __name__ == '__main__':
     # if args.data == 'DEAP':
     #     print("--------- DEAP DATA ---------\n")
-    #     # base_x = torch.load('/home/sjf/eegall/data/DEAP/all_base1_de_features.pt').float()
-    #     # harm_x = torch.load('/home/sjf/eegall/data/DEAP/all_harmon1_de_features.pt').float()
-    #     # all_labels = torch.load('/home/sjf/eegall/data/DEAP/all_1labels.pt')
-    #     # base_graph = torch.load('/home/sjf/eegall/data/DEAP/base1_graph.pt')
-    #     # harm_graph = torch.load('/home/sjf/eegall/data/DEAP/harm1_graph.pt')
+    #     # base_x = torch.load('/eegall/data/DEAP/all_base1_de_features.pt').float()
+    #     # harm_x = torch.load('/eegall/data/DEAP/all_harmon1_de_features.pt').float()
+    #     # all_labels = torch.load('/eegall/data/DEAP/all_1labels.pt')
+    #     # base_graph = torch.load('/eegall/data/DEAP/base1_graph.pt')
+    #     # harm_graph = torch.load('/eegall/data/DEAP/harm1_graph.pt')
 
     #     # base_graph = torch.tensor(base_graph, dtype=torch.float)
     #     # harm_graph = torch.tensor(harm_graph, dtype=torch.float)
-    #     base_x = torch.load('/home/sjf/eegall/data/DEAP/all_base1_de_features.pt').float()
-    #     harm_x = torch.load('/home/sjf/eegall/data/DEAP/all_harmon1_de_features.pt').float()
-    #     all_labels = torch.load('/home/sjf/eegall/data/DEAP/all_1labels.pt')
-    #     base_graph = torch.load('/home/sjf/eegall/data/DEAP/base1_graph.pt')
-    #     harm_graph = torch.load('/home/sjf/eegall/data/DEAP/harm1_graph.pt')
+    #     base_x = torch.load('/eegall/data/DEAP/all_base1_de_features.pt').float()
+    #     harm_x = torch.load('/eegall/data/DEAP/all_harmon1_de_features.pt').float()
+    #     all_labels = torch.load('/eegall/data/DEAP/all_1labels.pt')
+    #     base_graph = torch.load('/eegall/data/DEAP/base1_graph.pt')
+    #     harm_graph = torch.load('/eegall/data/DEAP/harm1_graph.pt')
 
     #     # 10 folds some can achieve 98, but avg 96, this is potential to be a good choice
-    #     # base_x = torch.load('/home/sjf/eegall/data/DEAP/all_base1_de_features.pt').float()
-    #     # harm_x = torch.load('/home/sjf/eegall/data/DEAP/all_harmon1_de_features.pt').float()
-    #     # all_labels = torch.load('/home/sjf/eegall/data/DEAP/all_1labels.pt')
-    #     # base_graph = torch.load('/home/sjf/eegall/data/DEAP/base1_graph.pt')
-    #     # harm_graph = torch.load('/home/sjf/eegall/data/DEAP/harm1_graph.pt')
+    #     # base_x = torch.load('/eegall/data/DEAP/all_base1_de_features.pt').float()
+    #     # harm_x = torch.load('/eegall/data/DEAP/all_harmon1_de_features.pt').float()
+    #     # all_labels = torch.load('/eegall/data/DEAP/all_1labels.pt')
+    #     # base_graph = torch.load('/eegall/data/DEAP/base1_graph.pt')
+    #     # harm_graph = torch.load('/eegall/data/DEAP/harm1_graph.pt')
     #     # if args.norm:
     #     #     base_x, harm_x = scaled_eeg(base_x, harm_x)
     #     # else:
@@ -295,18 +295,18 @@ if __name__ == '__main__':
         
     # elif args.data=='FACED':
     print("--------- FACED DATA ---------\n")
-    # base_x = torch.load('/home/sjf/eegall/data/all_base3_de_features.pt')
-    # harm_x = torch.load('/home/sjf/eegall/data/all_harmon3_de_features.pt')
+    # base_x = torch.load('/eegall/data/all_base3_de_features.pt')
+    # harm_x = torch.load('/eegall/data/all_harmon3_de_features.pt')
     # # base_x, harm_x = scaled_eeg(base_x, harm_x)
-    # all_labels = torch.load('/home/sjf/eegall/data/all_3labels.pt')
-    # base_graph = torch.load('/home/sjf/eegall/data/base3_graph.pt')
-    # harm_graph = torch.load('/home/sjf/eegall/data/harm3_graph.pt')
-    base_x = torch.load('/home/sjf/eegall/data/FACED/all_faced_rebase_de_features.pt')
-    harm_x = torch.load('/home/sjf/eegall/data/FACED/all_faced_reharmon_de_features.pt')
+    # all_labels = torch.load('/eegall/data/all_3labels.pt')
+    # base_graph = torch.load('/eegall/data/base3_graph.pt')
+    # harm_graph = torch.load('/eegall/data/harm3_graph.pt')
+    base_x = torch.load('/eegall/data/FACED/all_faced_rebase_de_features.pt')
+    harm_x = torch.load('/eegall/data/FACED/all_faced_reharmon_de_features.pt')
     # base_x, harm_x = scaled_eeg(base_x, harm_x)
-    all_labels = torch.load('/home/sjf/eegall/data/FACED/all_faced_relabels.pt')
-    base_graph = torch.load('/home/sjf/eegall/data/FACED/faced_rebase_graph.pt')
-    harm_graph = torch.load('/home/sjf/eegall/data/FACED/faced_reharm_graph.pt')
+    all_labels = torch.load('/eegall/data/FACED/all_faced_relabels.pt')
+    base_graph = torch.load('/eegall/data/FACED/faced_rebase_graph.pt')
+    harm_graph = torch.load('/eegall/data/FACED/faced_reharm_graph.pt')
 
     base_graph = torch.tensor(base_graph, dtype=torch.float)
     harm_graph = torch.tensor(harm_graph, dtype=torch.float)
@@ -331,7 +331,7 @@ if __name__ == '__main__':
     num_subjects = base_x.shape[0]
 
     # Fou = create_fourier_matrix(args.batch)
-    # model_dir = '/home/sjf/eegall/intermodel/'
+    # model_dir = '/eegall/intermodel/'
     # if args.norm:
     #     model_path = "norm"+str(args.norm)+"lr"+str(args.lr)+args.data+str(args.kfold)+'_'+str(args.batch)+'_'+str(args.maxiter) + '_' +args.loss + args.graph + 'seed'+str(args.seed)+'fold_best_model.pth'
     # else:
@@ -382,18 +382,18 @@ if __name__ == '__main__':
     # elif args.abtype == 'NTG':
     #     filename1 = 'NTG'+filename1
     # if args.limit:
-    #     filepath = '/home/sjf/eegall/withlimits/'+filename1
+    #     filepath = '/eegall/withlimits/'+filename1
     # else:
-    #     filepath = '/home/sjf/eegall/nolimits/'+filename1
+    #     filepath = '/eegall/nolimits/'+filename1
 
     # with open(filepath, 'a') as f:
     #     f.write(f"all subject avg max acc:{sum(all_max_acc) / len(all_max_acc)}\n all subject avg avg acc:{sum(all_avg_acc)/len(all_avg_acc)}\n avg max fs:{sum(all_max_fs)/len(all_max_fs)}\n avg avg fs:{sum(all_avg_fs)/len(all_avg_fs)}")
     #     # f.write(f'Max acc:{max_acc}, Max f score:{max_f_score}\n')
     
     # if args.limit:
-    #     directory = '/home/sjf/eegall/withlimits/'
+    #     directory = '/eegall/withlimits/'
     # else:
-    #     directory = '/home/sjf/eegall/nolimits/'
+    #     directory = '/eegall/nolimits/'
 
     # if args.data == 'DEAP':
     #     filename = args.data+str(args.kfold)+'_'+str(args.batch)+'_'+str(args.maxiter) + '_' +args.loss + args.graph+'seed'+str(args.seed) + '_trained_models.pt'
