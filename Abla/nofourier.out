@@ -1,0 +1,106 @@
+/home/sjf/eegall/main.py:1000: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  use_label = torch.tensor(all_labels[i,:,1],dtype=int)
+/home/sjf/eegall/main.py:998: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  use_label = torch.tensor(all_labels[i,:,0],dtype=int)
+/home/sjf/eegall/main.py:993: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  use_label = torch.tensor(all_labels[i,:,0],dtype=int)
+/home/sjf/eegall/main.py:995: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  use_label = torch.tensor(all_labels[i,:,1],dtype=int)
+/home/sjf/eegall/tgmodel.py:310: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  return F.softmax(freq_out)
+/home/sjf/anaconda3/envs/brain/lib/python3.9/site-packages/torch/autograd/__init__.py:173: UserWarning: Error detected in LogSoftmaxBackward0. Traceback of forward call that caused the error:
+  File "/home/sjf/eegall/main.py", line 1007, in <module>
+    train_models, max_acc, avg_acc, avg_f_score, max_f_score = cross_validation(args, i, harm_data, base_data, use_graph, use_label,seed=76, device=device)
+  File "/home/sjf/eegall/main.py", line 538, in cross_validation
+    trained_model, loss_record, acc_record = train(args.limit, model, device, base_train_data, harm_train_data, train_graph, train_labels, loss_fn, optimizer)
+  File "/home/sjf/eegall/main.py", line 183, in train
+    loss = loss_fn(output, label)
+  File "/home/sjf/anaconda3/envs/brain/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1110, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/sjf/eegall/customloss.py", line 11, in forward
+    log_probs = F.log_softmax(input, dim=-1)
+  File "/home/sjf/anaconda3/envs/brain/lib/python3.9/site-packages/torch/nn/functional.py", line 1907, in log_softmax
+    ret = input.log_softmax(dim)
+ (Triggered internally at  /opt/conda/conda-bld/pytorch_1646756402876/work/torch/csrc/autograd/python_anomaly_mode.cpp:104.)
+  Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+--------- FACED DATA ---------
+
+*********** ALL Loaded data ***************
+
+base_x: torch.Size([123, 312, 32, 7]), harm_x: torch.Size([123, 312, 32, 7]) all_labels: torch.Size([123, 312, 4]) 
+ base_graph: torch.Size([123, 312, 32, 32]) harm_graph: torch.Size([123, 312, 32, 32])
+
+this is with limit version
+Uing base graph and base feature for Time Graph part and harm feature for encoding!
+before val model path:/home/sjf/eegall/intermodel/modelsave10//home/sjf/eegall/intermodel/modelsave10/AblationArousal-norm-lr5e-05FACED10_11_5000_scebaseseed74fold_best_model.pth
+******** mix subject_0 ********
+
+[130, 182]
+******fold 1******
+
+*******Initializing new model*******
+Training... train_data length:327
+step: 0, Loss: nan Acc:0.5454545454545454
+Traceback (most recent call last):
+  File "/home/sjf/eegall/main.py", line 1007, in <module>
+    train_models, max_acc, avg_acc, avg_f_score, max_f_score = cross_validation(args, i, harm_data, base_data, use_graph, use_label,seed=76, device=device)
+  File "/home/sjf/eegall/main.py", line 538, in cross_validation
+    trained_model, loss_record, acc_record = train(args.limit, model, device, base_train_data, harm_train_data, train_graph, train_labels, loss_fn, optimizer)
+  File "/home/sjf/eegall/main.py", line 197, in train
+    loss.backward()
+  File "/home/sjf/anaconda3/envs/brain/lib/python3.9/site-packages/torch/_tensor.py", line 363, in backward
+    torch.autograd.backward(self, gradient, retain_graph, create_graph, inputs=inputs)
+  File "/home/sjf/anaconda3/envs/brain/lib/python3.9/site-packages/torch/autograd/__init__.py", line 173, in backward
+    Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+RuntimeError: Function 'LogSoftmaxBackward0' returned nan values in its 0th output.
+/home/sjf/eegall/tgmodel.py:310: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  return F.softmax(freq_out)
+/home/sjf/eegall/tgmodel.py:310: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  return F.softmax(freq_out)
+/home/sjf/eegall/tgmodel.py:310: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  return F.softmax(freq_out)
+/home/sjf/anaconda3/envs/brain/lib/python3.9/site-packages/torch/autograd/__init__.py:173: UserWarning: Error detected in LogSoftmaxBackward0. Traceback of forward call that caused the error:
+  File "/home/sjf/eegall/main.py", line 1007, in <module>
+    train_models, max_acc, avg_acc, avg_f_score, max_f_score = cross_validation(args, i, harm_data, base_data, use_graph, use_label,seed=76, device=device)
+  File "/home/sjf/eegall/main.py", line 538, in cross_validation
+    trained_model, loss_record, acc_record = train(args.limit, model, device, base_train_data, harm_train_data, train_graph, train_labels, loss_fn, optimizer)
+  File "/home/sjf/eegall/main.py", line 183, in train
+    loss = loss_fn(output, label)
+  File "/home/sjf/anaconda3/envs/brain/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1110, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/sjf/eegall/customloss.py", line 11, in forward
+    log_probs = F.log_softmax(input, dim=-1)
+  File "/home/sjf/anaconda3/envs/brain/lib/python3.9/site-packages/torch/nn/functional.py", line 1907, in log_softmax
+    ret = input.log_softmax(dim)
+ (Triggered internally at  /opt/conda/conda-bld/pytorch_1646756402876/work/torch/csrc/autograd/python_anomaly_mode.cpp:104.)
+  Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+--------- DEAP DATA ---------
+
+*********** ALL Loaded data ***************
+
+base_x: torch.Size([32, 760, 40, 7]), harm_x: torch.Size([32, 760, 40, 7]) all_labels: torch.Size([32, 760, 4]) 
+ base_graph: torch.Size([32, 760, 40, 40]) harm_graph: torch.Size([32, 760, 40, 40])
+
+this is with limit version
+Uing base graph and base feature for Time Graph part and harm feature for encoding!
+before val model path:/home/sjf/eegall/intermodel/modelsave10//home/sjf/eegall/intermodel/modelsave10/AblationValence-norm-lr5e-05DEAP10_38_5000_scebaseseed74fold_best_model.pth
+******** mix subject_0 ********
+
+[380, 380]
+******fold 1******
+
+*******Initializing new model*******
+Training... train_data length:684
+step: 0, Loss: nan Acc:0.5526315789473685
+Traceback (most recent call last):
+  File "/home/sjf/eegall/main.py", line 1007, in <module>
+    train_models, max_acc, avg_acc, avg_f_score, max_f_score = cross_validation(args, i, harm_data, base_data, use_graph, use_label,seed=76, device=device)
+  File "/home/sjf/eegall/main.py", line 538, in cross_validation
+    trained_model, loss_record, acc_record = train(args.limit, model, device, base_train_data, harm_train_data, train_graph, train_labels, loss_fn, optimizer)
+  File "/home/sjf/eegall/main.py", line 197, in train
+    loss.backward()
+  File "/home/sjf/anaconda3/envs/brain/lib/python3.9/site-packages/torch/_tensor.py", line 363, in backward
+    torch.autograd.backward(self, gradient, retain_graph, create_graph, inputs=inputs)
+  File "/home/sjf/anaconda3/envs/brain/lib/python3.9/site-packages/torch/autograd/__init__.py", line 173, in backward
+    Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+RuntimeError: Function 'LogSoftmaxBackward0' returned nan values in its 0th output.

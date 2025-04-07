@@ -1,0 +1,760 @@
+/home/sjf/eegall/main.py:495: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  use_label = torch.tensor(all_labels[i,:],dtype=int)
+/home/sjf/eegall/main.py:493: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  use_label = torch.tensor(all_labels[i,:,0],dtype=int)
+/home/sjf/eegall/main.py:127: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  base_val_data = torch.tensor(base_val_data)
+/home/sjf/eegall/main.py:128: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  harm_val_data = torch.tensor(harm_val_data)
+/home/sjf/eegall/main.py:129: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  val_graph = torch.tensor(val_graph)
+/home/sjf/eegall/main.py:130: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  val_labels = torch.tensor(val_labels)
+/home/sjf/eegall/main.py:127: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  base_val_data = torch.tensor(base_val_data)
+/home/sjf/eegall/main.py:128: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  harm_val_data = torch.tensor(harm_val_data)
+/home/sjf/eegall/main.py:129: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  val_graph = torch.tensor(val_graph)
+/home/sjf/eegall/main.py:130: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  val_labels = torch.tensor(val_labels)
+--------- FACED DATA ---------
+
+*********** ALL Loaded data ***************
+
+base_x: torch.Size([123, 312, 32, 7]), harm_x: torch.Size([123, 312, 32, 7]) all_labels: torch.Size([123, 312]) 
+ base_graph: torch.Size([123, 312, 32, 32]) harm_graph: torch.Size([123, 312, 32, 32])
+
+this is with limit version
+Uing base graph and base feature for Time Graph part and harm feature for encoding!
+subject_-1's fold model has been deleted.
+******** mix subject_0 ********
+
+[156, 156]
+******fold 1******
+
+*******Initializing new model*******
+Training... train_data length:280
+step: 0, Loss: 46.56894302368164
+step: 100, Loss: 32.13855743408203
+step: 200, Loss: 33.79595947265625
+step: 300, Loss: 32.92365264892578
+step: 400, Loss: 27.987262725830078
+step: 500, Loss: 27.401277542114258
+step: 600, Loss: 29.893177032470703
+step: 700, Loss: 25.59478759765625
+step: 800, Loss: 25.844701766967773
+step: 900, Loss: 35.901763916015625
+step: 1000, Loss: 23.680309295654297
+step: 1100, Loss: 22.75943374633789
+step: 1200, Loss: 34.276798248291016
+step: 1300, Loss: 28.17559814453125
+step: 1400, Loss: 28.09964370727539
+step: 1500, Loss: 25.150270462036133
+step: 1600, Loss: 29.751571655273438
+step: 1700, Loss: 26.615066528320312
+step: 1800, Loss: 29.44586181640625
+step: 1900, Loss: 28.22740936279297
+step: 2000, Loss: 31.124683380126953
+step: 2100, Loss: 31.151348114013672
+step: 2200, Loss: 28.184598922729492
+step: 2300, Loss: 25.052532196044922
+step: 2400, Loss: 29.48497772216797
+step: 2500, Loss: 28.118391036987305
+step: 2600, Loss: 29.39938735961914
+step: 2700, Loss: 29.47372055053711
+step: 2800, Loss: 29.402603149414062
+step: 2900, Loss: 23.470102310180664
+training successfully ended.
+validating...
+validate data length:32
+acc: 0.5
+precision: 0.4230769230769231
+recall: 0.9166666666666666
+F_score: 0.5789473684210527
+******fold 2******
+
+Training... train_data length:280
+step: 0, Loss: 26.769573211669922
+step: 100, Loss: 28.175018310546875
+step: 200, Loss: 29.660884857177734
+step: 300, Loss: 26.581256866455078
+step: 400, Loss: 31.22644805908203
+step: 500, Loss: 24.891929626464844
+step: 600, Loss: 21.831350326538086
+step: 700, Loss: 24.931873321533203
+step: 800, Loss: 26.462764739990234
+step: 900, Loss: 24.999982833862305
+step: 1000, Loss: 26.428142547607422
+step: 1100, Loss: 27.856475830078125
+step: 1200, Loss: 29.524307250976562
+step: 1300, Loss: 21.883790969848633
+step: 1400, Loss: 30.97236442565918
+step: 1500, Loss: 26.488500595092773
+step: 1600, Loss: 29.5673828125
+step: 1700, Loss: 24.956819534301758
+step: 1800, Loss: 23.205970764160156
+step: 1900, Loss: 26.54775619506836
+step: 2000, Loss: 30.94302749633789
+step: 2100, Loss: 26.341991424560547
+step: 2200, Loss: 23.396015167236328
+step: 2300, Loss: 23.334716796875
+step: 2400, Loss: 27.922231674194336
+step: 2500, Loss: 29.297073364257812
+step: 2600, Loss: 32.569149017333984
+step: 2700, Loss: 24.893234252929688
+step: 2800, Loss: 29.460538864135742
+step: 2900, Loss: 24.892580032348633
+training successfully ended.
+validating...
+validate data length:32
+acc: 0.5625
+precision: 0.5555555555555556
+recall: 0.625
+F_score: 0.5882352941176471
+******fold 3******
+
+Training... train_data length:281
+step: 0, Loss: 26.901927947998047
+step: 100, Loss: 28.307559967041016
+step: 200, Loss: 24.873210906982422
+step: 300, Loss: 26.323169708251953
+step: 400, Loss: 32.48225402832031
+step: 500, Loss: 24.725765228271484
+step: 600, Loss: 24.898963928222656
+step: 700, Loss: 29.339744567871094
+step: 800, Loss: 30.825481414794922
+step: 900, Loss: 26.325180053710938
+step: 1000, Loss: 29.454833984375
+step: 1100, Loss: 30.957008361816406
+step: 1200, Loss: 24.75927734375
+step: 1300, Loss: 27.855743408203125
+step: 1400, Loss: 24.898197174072266
+step: 1500, Loss: 26.43313217163086
+step: 1600, Loss: 24.779300689697266
+step: 1700, Loss: 32.65166091918945
+step: 1800, Loss: 29.460952758789062
+step: 1900, Loss: 30.92131805419922
+step: 2000, Loss: 26.40326499938965
+step: 2100, Loss: 29.389751434326172
+step: 2200, Loss: 24.842567443847656
+step: 2300, Loss: 29.493335723876953
+step: 2400, Loss: 26.434757232666016
+step: 2500, Loss: 20.385772705078125
+step: 2600, Loss: 27.93105697631836
+step: 2700, Loss: 28.98134422302246
+step: 2800, Loss: 23.43909454345703
+step: 2900, Loss: 31.021209716796875
+training successfully ended.
+validating...
+validate data length:31
+acc: 0.4666666666666667
+precision: 0.47368421052631576
+recall: 0.6
+F_score: 0.5294117647058824
+******fold 4******
+
+Training... train_data length:281
+step: 0, Loss: 26.730953216552734
+step: 100, Loss: 24.814306259155273
+step: 200, Loss: 27.774032592773438
+step: 300, Loss: 28.025344848632812
+step: 400, Loss: 27.949665069580078
+step: 500, Loss: 26.479032516479492
+step: 600, Loss: 23.31462860107422
+step: 700, Loss: 29.489837646484375
+step: 800, Loss: 31.131305694580078
+step: 900, Loss: 29.560314178466797
+step: 1000, Loss: 34.166629791259766
+step: 1100, Loss: 29.38125991821289
+step: 1200, Loss: 29.20380401611328
+step: 1300, Loss: 26.342466354370117
+step: 1400, Loss: 24.87921142578125
+step: 1500, Loss: 24.825374603271484
+step: 1600, Loss: 26.482566833496094
+step: 1700, Loss: 29.290904998779297
+step: 1800, Loss: 26.317462921142578
+step: 1900, Loss: 30.97256851196289
+step: 2000, Loss: 24.824302673339844
+step: 2100, Loss: 32.46636962890625
+step: 2200, Loss: 27.791671752929688
+step: 2300, Loss: 27.970443725585938
+step: 2400, Loss: 27.94891357421875
+step: 2500, Loss: 32.497161865234375
+step: 2600, Loss: 24.917766571044922
+step: 2700, Loss: 23.387248992919922
+step: 2800, Loss: 26.35561752319336
+step: 2900, Loss: 21.82508087158203
+training successfully ended.
+validating...
+validate data length:31
+acc: 0.4666666666666667
+precision: 0.47058823529411764
+recall: 0.5333333333333333
+F_score: 0.5
+******fold 5******
+
+Training... train_data length:281
+step: 0, Loss: 28.262683868408203
+step: 100, Loss: 34.00346374511719
+step: 200, Loss: 24.964553833007812
+step: 300, Loss: 23.390602111816406
+step: 400, Loss: 24.884326934814453
+step: 500, Loss: 23.297060012817383
+step: 600, Loss: 26.346532821655273
+step: 700, Loss: 31.074899673461914
+step: 800, Loss: 29.372400283813477
+step: 900, Loss: 29.19927978515625
+step: 1000, Loss: 26.39399528503418
+step: 1100, Loss: 23.40360450744629
+step: 1200, Loss: 23.318456649780273
+step: 1300, Loss: 20.28438949584961
+step: 1400, Loss: 29.466951370239258
+step: 1500, Loss: 21.80138397216797
+step: 1600, Loss: 26.32866096496582
+step: 1700, Loss: 31.026351928710938
+step: 1800, Loss: 26.406505584716797
+step: 1900, Loss: 26.31493377685547
+step: 2000, Loss: 26.554664611816406
+step: 2100, Loss: 26.437496185302734
+step: 2200, Loss: 24.83041000366211
+step: 2300, Loss: 24.869827270507812
+step: 2400, Loss: 21.704296112060547
+step: 2500, Loss: 29.234355926513672
+step: 2600, Loss: 27.98021697998047
+step: 2700, Loss: 27.93474578857422
+step: 2800, Loss: 29.422800064086914
+step: 2900, Loss: 23.176435470581055
+training successfully ended.
+validating...
+validate data length:31
+acc: 0.43333333333333335
+precision: 0.5384615384615384
+recall: 0.3888888888888889
+F_score: 0.45161290322580644
+******fold 6******
+
+Training... train_data length:281
+step: 0, Loss: 23.840633392333984
+step: 100, Loss: 28.070158004760742
+step: 200, Loss: 31.09714698791504
+step: 300, Loss: 26.37358856201172
+step: 400, Loss: 28.06529998779297
+step: 500, Loss: 27.844440460205078
+step: 600, Loss: 27.861942291259766
+step: 700, Loss: 28.018266677856445
+step: 800, Loss: 29.43148422241211
+step: 900, Loss: 26.45565414428711
+step: 1000, Loss: 29.430498123168945
+step: 1100, Loss: 26.27169418334961
+step: 1200, Loss: 23.329532623291016
+step: 1300, Loss: 31.05059814453125
+step: 1400, Loss: 27.86302947998047
+step: 1500, Loss: 24.972410202026367
+step: 1600, Loss: 26.41793441772461
+step: 1700, Loss: 26.44898796081543
+step: 1800, Loss: 23.31100845336914
+step: 1900, Loss: 30.964418411254883
+step: 2000, Loss: 23.559886932373047
+step: 2100, Loss: 28.06598663330078
+step: 2200, Loss: 24.877315521240234
+step: 2300, Loss: 21.784568786621094
+step: 2400, Loss: 27.875911712646484
+step: 2500, Loss: 26.28913116455078
+step: 2600, Loss: 32.462364196777344
+step: 2700, Loss: 23.35832977294922
+step: 2800, Loss: 27.78668975830078
+step: 2900, Loss: 23.383411407470703
+training successfully ended.
+--------- DEAP DATA ---------
+
+*********** ALL Loaded data ***************
+
+base_x: torch.Size([32, 760, 40, 7]), harm_x: torch.Size([32, 760, 40, 7]) all_labels: torch.Size([32, 760, 4]) 
+ base_graph: torch.Size([32, 760, 40, 40]) harm_graph: torch.Size([32, 760, 40, 40])
+
+this is with limit version
+Uing base graph and base feature for Time Graph part and harm feature for encoding!
+******** mix subject_0 ********
+
+[380, 380]
+******fold 1******
+
+*******Initializing new model*******
+Training... train_data length:684
+step: 0, Loss: 105.05811309814453
+step: 100, Loss: 47.20887756347656
+step: 200, Loss: 50.828739166259766
+step: 300, Loss: 51.83271026611328
+step: 400, Loss: 43.494049072265625
+step: 500, Loss: 54.040409088134766
+step: 600, Loss: 56.79948043823242
+step: 700, Loss: 49.93794631958008
+step: 800, Loss: 51.89168930053711
+step: 900, Loss: 39.29150390625
+step: 1000, Loss: 48.89638137817383
+step: 1100, Loss: 53.030670166015625
+step: 1200, Loss: 51.490745544433594
+step: 1300, Loss: 51.40924835205078
+step: 1400, Loss: 41.05815887451172
+step: 1500, Loss: 29.1477108001709
+step: 1600, Loss: 42.7478141784668
+step: 1700, Loss: 51.552242279052734
+step: 1800, Loss: 49.65280532836914
+step: 1900, Loss: 51.53654098510742
+step: 2000, Loss: 54.60324478149414
+step: 2100, Loss: 40.976078033447266
+step: 2200, Loss: 47.784603118896484
+step: 2300, Loss: 42.628936767578125
+step: 2400, Loss: 44.21456527709961
+step: 2500, Loss: 46.169246673583984
+step: 2600, Loss: 47.71242141723633
+step: 2700, Loss: 45.8104362487793
+step: 2800, Loss: 44.23967361450195
+step: 2900, Loss: 49.77824783325195
+step: 3000, Loss: 42.68132781982422
+step: 3100, Loss: 40.264896392822266
+step: 3200, Loss: 42.64813995361328
+step: 3300, Loss: 42.7468376159668
+step: 3400, Loss: 37.03541564941406
+step: 3500, Loss: 51.53984832763672
+step: 3600, Loss: 46.231258392333984
+step: 3700, Loss: 44.76239776611328
+step: 3800, Loss: 44.2397575378418
+step: 3900, Loss: 51.763519287109375
+step: 4000, Loss: 44.697120666503906
+step: 4100, Loss: 42.57112121582031
+step: 4200, Loss: 37.345672607421875
+step: 4300, Loss: 53.04701614379883
+step: 4400, Loss: 41.06686782836914
+step: 4500, Loss: 39.4443359375
+step: 4600, Loss: 48.063751220703125
+step: 4700, Loss: 55.70481491088867
+step: 4800, Loss: 56.28811264038086
+step: 4900, Loss: 58.6922607421875
+step: 5000, Loss: 63.7919921875
+step: 5100, Loss: 48.235015869140625
+step: 5200, Loss: 56.71139907836914
+step: 5300, Loss: 34.972373962402344
+step: 5400, Loss: 44.388694763183594
+step: 5500, Loss: 54.25093078613281
+step: 5600, Loss: 52.832157135009766
+step: 5700, Loss: 51.118988037109375
+step: 5800, Loss: 58.101070404052734
+step: 5900, Loss: 58.46133041381836
+step: 6000, Loss: 46.84968185424805
+step: 6100, Loss: 59.57526397705078
+step: 6200, Loss: 61.68592834472656
+step: 6300, Loss: 62.5333251953125
+step: 6400, Loss: 44.00611114501953
+step: 6500, Loss: 51.09464645385742
+step: 6600, Loss: 54.655269622802734
+step: 6700, Loss: 56.31821823120117
+step: 6800, Loss: 50.69184494018555
+step: 6900, Loss: 53.642974853515625
+step: 7000, Loss: 52.117042541503906
+step: 7100, Loss: 63.90000534057617
+step: 7200, Loss: 36.8317756652832
+step: 7300, Loss: 67.23236083984375
+step: 7400, Loss: 44.66066360473633
+step: 7500, Loss: 59.23831558227539
+step: 7600, Loss: 60.16463088989258
+step: 7700, Loss: 60.19586944580078
+step: 7800, Loss: 52.03609848022461
+step: 7900, Loss: 55.92462921142578
+step: 8000, Loss: 47.144893646240234
+step: 8100, Loss: 57.25502014160156
+step: 8200, Loss: 47.01055145263672
+step: 8300, Loss: 55.491634368896484
+step: 8400, Loss: 53.270301818847656
+step: 8500, Loss: 49.7061653137207
+step: 8600, Loss: 55.738197326660156
+step: 8700, Loss: 58.42620849609375
+step: 8800, Loss: 61.122528076171875
+step: 8900, Loss: 53.33927917480469
+step: 9000, Loss: 48.484073638916016
+step: 9100, Loss: 35.09844970703125
+step: 9200, Loss: 56.97407531738281
+step: 9300, Loss: 54.57204055786133
+step: 9400, Loss: 55.847171783447266
+step: 9500, Loss: 57.99076843261719
+step: 9600, Loss: 51.99911880493164
+step: 9700, Loss: 65.74749755859375
+step: 9800, Loss: 48.23879623413086
+step: 9900, Loss: 51.10490036010742
+training successfully ended.
+validating...
+validate data length:76
+acc: 0.5
+precision: 0
+recall: 0.0
+F_score: 0
+******fold 2******
+
+Training... train_data length:684
+step: 0, Loss: 53.08618927001953
+step: 100, Loss: 57.0316162109375
+step: 200, Loss: 56.13896179199219
+step: 300, Loss: 43.8538818359375
+step: 400, Loss: 53.72162628173828
+step: 500, Loss: 48.4804573059082
+step: 600, Loss: 57.795467376708984
+step: 700, Loss: 52.796775817871094
+step: 800, Loss: 60.49406814575195
+step: 900, Loss: 57.0896110534668
+step: 1000, Loss: 60.45357131958008
+step: 1100, Loss: 58.102882385253906
+step: 1200, Loss: 45.85945510864258
+step: 1300, Loss: 50.04956817626953
+step: 1400, Loss: 61.066001892089844
+step: 1500, Loss: 32.21743392944336
+step: 1600, Loss: 47.75849914550781
+step: 1700, Loss: 65.0630111694336
+step: 1800, Loss: 51.00584411621094
+step: 1900, Loss: 64.99790954589844
+step: 2000, Loss: 58.02991485595703
+step: 2100, Loss: 49.80959701538086
+step: 2200, Loss: 52.10478210449219
+step: 2300, Loss: 55.247257232666016
+step: 2400, Loss: 52.35444641113281
+step: 2500, Loss: 50.843421936035156
+step: 2600, Loss: 61.01480484008789
+step: 2700, Loss: 52.35014724731445
+step: 2800, Loss: 47.268516540527344
+step: 2900, Loss: 49.62256622314453
+step: 3000, Loss: 64.31855010986328
+step: 3100, Loss: 55.385101318359375
+step: 3200, Loss: 57.75233459472656
+step: 3300, Loss: 53.541290283203125
+step: 3400, Loss: 33.3890266418457
+step: 3500, Loss: 52.372825622558594
+step: 3600, Loss: 52.321990966796875
+step: 3700, Loss: 53.76237487792969
+step: 3800, Loss: 65.75300598144531
+step: 3900, Loss: 44.834896087646484
+step: 4000, Loss: 54.136104583740234
+step: 4100, Loss: 52.38779067993164
+step: 4200, Loss: 53.238853454589844
+step: 4300, Loss: 54.167179107666016
+step: 4400, Loss: 51.676025390625
+step: 4500, Loss: 54.3559455871582
+step: 4600, Loss: 54.87234115600586
+step: 4700, Loss: 54.13539123535156
+step: 4800, Loss: 46.59361267089844
+step: 4900, Loss: 61.151763916015625
+step: 5000, Loss: 61.442665100097656
+step: 5100, Loss: 56.60157775878906
+step: 5200, Loss: 48.20206069946289
+step: 5300, Loss: 38.291168212890625
+step: 5400, Loss: 62.293975830078125
+step: 5500, Loss: 53.614158630371094
+step: 5600, Loss: 58.09606170654297
+step: 5700, Loss: 54.08577346801758
+step: 5800, Loss: 60.763511657714844
+step: 5900, Loss: 59.56757354736328
+step: 6000, Loss: 52.457942962646484
+step: 6100, Loss: 48.457550048828125
+step: 6200, Loss: 41.23469924926758
+step: 6300, Loss: 57.70588684082031
+step: 6400, Loss: 45.613040924072266
+step: 6500, Loss: 51.735836029052734
+step: 6600, Loss: 56.24201202392578
+step: 6700, Loss: 50.338714599609375
+step: 6800, Loss: 60.19070053100586
+step: 6900, Loss: 52.56851577758789
+step: 7000, Loss: 57.62807846069336
+step: 7100, Loss: 52.23685073852539
+step: 7200, Loss: 34.68244934082031
+step: 7300, Loss: 41.34598922729492
+step: 7400, Loss: 56.57284927368164
+step: 7500, Loss: 59.70155334472656
+step: 7600, Loss: 59.93284606933594
+step: 7700, Loss: 55.25619888305664
+step: 7800, Loss: 56.03445053100586
+step: 7900, Loss: 64.7038803100586
+step: 8000, Loss: 55.00638961791992
+step: 8100, Loss: 42.91864013671875
+step: 8200, Loss: 54.213069915771484
+step: 8300, Loss: 55.13536071777344
+step: 8400, Loss: 49.39519119262695
+step: 8500, Loss: 48.842506408691406
+step: 8600, Loss: 53.76713943481445
+step: 8700, Loss: 58.53715133666992
+step: 8800, Loss: 56.44138717651367
+step: 8900, Loss: 54.38460159301758
+step: 9000, Loss: 55.97321701049805
+step: 9100, Loss: 36.67926025390625
+step: 9200, Loss: 56.97990798950195
+step: 9300, Loss: 51.515193939208984
+step: 9400, Loss: 61.933536529541016
+step: 9500, Loss: 57.45294952392578
+step: 9600, Loss: 55.99882888793945
+step: 9700, Loss: 50.48998260498047
+step: 9800, Loss: 45.307430267333984
+step: 9900, Loss: 56.75733184814453
+training successfully ended.
+validating...
+validate data length:76
+acc: 0.4444444444444444
+precision: 0
+recall: 0.0
+F_score: 0
+******fold 3******
+
+Training... train_data length:684
+step: 0, Loss: 62.97258758544922
+step: 100, Loss: 43.3921012878418
+step: 200, Loss: 62.106300354003906
+validating...
+validate data length:31
+acc: 0.5333333333333333
+precision: 0.5833333333333334
+recall: 0.7777777777777778
+F_score: 0.6666666666666666
+******fold 7******
+
+Training... train_data length:281
+step: 0, Loss: 31.520282745361328
+step: 100, Loss: 29.4898681640625
+step: 200, Loss: 27.908248901367188
+step: 300, Loss: 27.89126205444336
+step: 400, Loss: 31.0875301361084
+step: 500, Loss: 30.940673828125
+step: 600, Loss: 30.974712371826172
+step: 700, Loss: 26.38380241394043
+step: 800, Loss: 24.844282150268555
+step: 900, Loss: 29.471811294555664
+step: 1000, Loss: 20.331592559814453
+step: 1100, Loss: 31.035953521728516
+step: 1200, Loss: 26.395606994628906
+step: 1300, Loss: 32.40077590942383
+step: 1400, Loss: 24.86478042602539
+step: 1500, Loss: 29.494770050048828
+step: 1600, Loss: 30.858266830444336
+step: 1700, Loss: 29.409042358398438
+step: 1800, Loss: 27.96792221069336
+step: 1900, Loss: 23.35027503967285
+step: 2000, Loss: 27.823959350585938
+step: 2100, Loss: 24.75655746459961
+step: 2200, Loss: 30.369483947753906
+step: 2300, Loss: 26.478836059570312
+step: 2400, Loss: 24.86288070678711
+step: 2500, Loss: 29.515899658203125
+step: 2600, Loss: 29.53131866455078
+step: 2700, Loss: 21.78347396850586
+step: 2800, Loss: 27.945934295654297
+step: 2900, Loss: 27.89224624633789
+training successfully ended.
+validating...
+validate data length:31
+acc: 0.4666666666666667
+precision: 0.5294117647058824
+recall: 0.5294117647058824
+F_score: 0.5294117647058824
+******fold 8******
+
+Training... train_data length:281
+step: 0, Loss: 23.338233947753906
+step: 100, Loss: 28.046066284179688
+step: 200, Loss: 30.90401840209961
+step: 300, Loss: 23.391056060791016
+step: 400, Loss: 29.445907592773438
+step: 500, Loss: 24.899471282958984
+step: 600, Loss: 32.581573486328125
+step: 700, Loss: 26.385692596435547
+step: 800, Loss: 29.231441497802734
+step: 900, Loss: 30.80299949645996
+step: 1000, Loss: 26.279869079589844
+step: 1100, Loss: 29.464271545410156
+step: 1200, Loss: 30.92110252380371
+step: 1300, Loss: 24.85613250732422
+step: 1400, Loss: 24.88775634765625
+step: 1500, Loss: 23.34788703918457
+step: 1600, Loss: 23.20298957824707
+step: 1700, Loss: 24.868099212646484
+step: 1800, Loss: 32.35015869140625
+step: 1900, Loss: 27.799724578857422
+step: 2000, Loss: 29.341079711914062
+step: 2100, Loss: 23.266132354736328
+step: 2200, Loss: 29.315738677978516
+step: 2300, Loss: 26.451061248779297
+step: 2400, Loss: 23.441661834716797
+step: 2500, Loss: 24.777626037597656
+step: 2600, Loss: 28.827407836914062
+step: 2700, Loss: 25.098106384277344
+step: 2800, Loss: 25.033798217773438
+step: 2900, Loss: 32.404449462890625
+training successfully ended.
+validating...
+validate data length:31
+acc: 0.5
+precision: 0.5
+recall: 0.8
+F_score: 0.6153846153846154
+******fold 9******
+
+Training... train_data length:281
+step: 0, Loss: 26.507503509521484
+step: 100, Loss: 26.4472599029541
+step: 200, Loss: 27.836963653564453
+step: 300, Loss: 27.75634002685547
+step: 400, Loss: 23.41999626159668
+step: 500, Loss: 23.348297119140625
+step: 600, Loss: 27.93401336669922
+step: 700, Loss: 27.905590057373047
+step: 800, Loss: 21.787036895751953
+step: 900, Loss: 26.4720458984375
+step: 1000, Loss: 26.596019744873047
+step: 1100, Loss: 29.390121459960938
+step: 1200, Loss: 26.284271240234375
+step: 1300, Loss: 26.380279541015625
+step: 1400, Loss: 28.009071350097656
+step: 1500, Loss: 24.9090518951416
+step: 1600, Loss: 29.416759490966797
+step: 1700, Loss: 23.42211151123047
+step: 1800, Loss: 26.342418670654297
+step: 1900, Loss: 27.81924057006836
+step: 2000, Loss: 27.793838500976562
+step: 2100, Loss: 27.847938537597656
+step: 2200, Loss: 30.70675277709961
+step: 2300, Loss: 29.374797821044922
+step: 2400, Loss: 32.30769348144531
+step: 2500, Loss: 26.29745101928711
+step: 2600, Loss: 29.311782836914062
+step: 2700, Loss: 29.36849594116211
+step: 2800, Loss: 24.900909423828125
+step: 2900, Loss: 32.490989685058594
+training successfully ended.
+validating...
+validate data length:31
+acc: 0.4666666666666667
+precision: 0.5263157894736842
+recall: 0.5882352941176471
+F_score: 0.5555555555555555
+******fold 10******
+
+Training... train_data length:281
+step: 0, Loss: 29.76497459411621
+step: 100, Loss: 24.6599178314209
+step: 200, Loss: 29.487525939941406
+step: 300, Loss: 27.997211456298828
+step: 400, Loss: 26.490739822387695
+step: 500, Loss: 27.887794494628906
+step: 600, Loss: 26.367368698120117
+step: 700, Loss: 26.4363956451416
+step: 800, Loss: 29.513225555419922
+step: 900, Loss: 29.280385971069336
+step: 1000, Loss: 31.080913543701172
+step: 1100, Loss: 24.896495819091797
+step: 1200, Loss: 30.950111389160156
+step: 1300, Loss: 29.4486026763916
+step: 1400, Loss: 27.877971649169922
+step: 1500, Loss: 28.031112670898438
+step: 1600, Loss: 23.26415252685547
+step: 1700, Loss: 27.896198272705078
+step: 1800, Loss: 28.015560150146484
+step: 1900, Loss: 29.354816436767578
+step: 2000, Loss: 29.93521499633789
+step: 2100, Loss: 27.881847381591797
+step: 2200, Loss: 29.500019073486328
+step: 2300, Loss: 27.97736930847168
+step: 2400, Loss: 26.459903717041016
+step: 2500, Loss: 27.80911636352539
+step: 2600, Loss: 23.267635345458984
+step: 2700, Loss: 26.469013214111328
+step: 2800, Loss: 27.881671905517578
+step: 2900, Loss: 26.414730072021484
+training successfully ended.
+validating...
+validate data length:31
+acc: 0.6333333333333333
+precision: 0.5333333333333333
+recall: 0.6666666666666666
+F_score: 0.5925925925925926
+subject 0 Avgacc: 0.5029166666666667 Avgfscore: 0.5607818525375701 
+ Max acc:0.6333333333333333, Max f score:0.6666666666666666
+subject_0's fold model has been deleted.
+******** mix subject_1 ********
+
+[156, 156]
+******fold 1******
+
+*******Initializing new model*******
+Training... train_data length:280
+step: 0, Loss: 47.05845260620117
+step: 100, Loss: 32.97241973876953
+step: 200, Loss: 31.22039794921875
+step: 300, Loss: 31.35164451599121
+step: 400, Loss: 29.853557586669922
+step: 500, Loss: 23.92671012878418
+step: 600, Loss: 31.54409408569336
+step: 700, Loss: 28.434959411621094
+step: 800, Loss: 27.007625579833984
+step: 900, Loss: 26.885440826416016
+step: 1000, Loss: 28.01871109008789
+step: 1100, Loss: 30.38368797302246
+step: 1200, Loss: 25.407745361328125
+step: 1300, Loss: 26.574867248535156
+step: 1400, Loss: 26.755340576171875
+step: 1500, Loss: 28.104900360107422
+step: 1600, Loss: 28.20276641845703
+step: 1700, Loss: 31.10833740234375
+step: 1800, Loss: 28.119272232055664
+step: 1900, Loss: 28.03164291381836
+step: 2000, Loss: 18.866613388061523
+step: 2100, Loss: 26.481510162353516
+step: 2200, Loss: 23.520721435546875
+step: 2300, Loss: 28.070159912109375
+step: 2400, Loss: 20.365835189819336
+step: 2500, Loss: 27.993091583251953
+step: 2600, Loss: 23.48512077331543
+step: 2700, Loss: 26.44244384765625
+step: 2800, Loss: 31.147245407104492
+step: 2900, Loss: 30.9737548828125
+training successfully ended.
+validating...
+validate data length:32
+acc: 0.75
+precision: 0.6428571428571429
+recall: 0.75
+F_score: 0.6923076923076924
+******fold 2******
+
+Training... train_data length:280
+step: 0, Loss: 28.45565414428711
+step: 100, Loss: 26.530029296875
+step: 200, Loss: 27.889923095703125
+step: 300, Loss: 27.906400680541992
+step: 400, Loss: 26.600597381591797
+step: 500, Loss: 26.334232330322266
+step: 600, Loss: 28.00849151611328
+step: 700, Loss: 29.476707458496094
+step: 800, Loss: 26.329410552978516
+step: 900, Loss: 24.828125
+step: 1000, Loss: 31.010723114013672
+step: 1100, Loss: 24.826675415039062
+step: 1200, Loss: 26.427478790283203
+step: 1300, Loss: 24.917404174804688
+step: 1400, Loss: 29.630149841308594
+step: 1500, Loss: 26.34714126586914
+step: 1600, Loss: 23.337488174438477
+step: 1700, Loss: 21.841402053833008
+step: 1800, Loss: 30.855661392211914
+step: 1900, Loss: 29.3183536529541
+step: 2000, Loss: 23.37133026123047
+step: 2100, Loss: 30.947614669799805
+step: 2200, Loss: 30.927831649780273
+step: 2300, Loss: 23.331323623657227
+step: 2400, Loss: 26.303783416748047
+step: 2500, Loss: 29.311187744140625
+step: 2600, Loss: 27.847352981567383
+step: 2700, Loss: 27.92856788635254
+step: 2800, Loss: 24.832298278808594
+step: 2900, Loss: 23.55524253845215
+training successfully ended.
+validating...
+validate data length:32
+acc: 0.59375
+precision: 0.6666666666666666
+recall: 0.375
+F_score: 0.4800000000000001

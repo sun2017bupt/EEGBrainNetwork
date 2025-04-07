@@ -1,0 +1,1162 @@
+/home/sjf/eegall/main.py:995: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  use_label = torch.tensor(all_labels[i,:,1],dtype=int)
+/home/sjf/eegall/main.py:998: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  use_label = torch.tensor(all_labels[i,:,0],dtype=int)
+/home/sjf/eegall/main.py:217: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  base_val_data = torch.tensor(base_val_data)
+/home/sjf/eegall/main.py:218: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  harm_val_data = torch.tensor(harm_val_data)
+/home/sjf/eegall/main.py:217: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  base_val_data = torch.tensor(base_val_data)
+/home/sjf/eegall/main.py:218: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  harm_val_data = torch.tensor(harm_val_data)
+--------- FACED DATA ---------
+
+*********** ALL Loaded data ***************
+
+base_x: torch.Size([123, 312, 32, 7]), harm_x: torch.Size([123, 312, 32, 7]) all_labels: torch.Size([123, 312, 4]) 
+ base_graph: torch.Size([123, 312, 32, 32]) harm_graph: torch.Size([123, 312, 32, 32])
+
+this is with limit version
+Uing base graph and base feature for Time Graph part and harm feature for encoding!
+before val model path:/home/sjf/eegall/intermodel/modelsave8//home/sjf/eegall/intermodel/modelsave8/Valence-norm-lr5e-05FACED10_11_5000_scebaseseed74fold_best_model.pth
+******** mix subject_0 ********
+
+[52, 260]
+******fold 1******
+
+*******Initializing new model*******
+Training... train_data length:468
+step: 0, Loss: 5.206456184387207 Acc:0.36363636363636365
+step: 100, Loss: 2.902308940887451 Acc:0.7272727272727273
+step: 200, Loss: 1.5880926847457886 Acc:0.8181818181818182
+step: 300, Loss: 0.4612342119216919 Acc:1.0
+step: 400, Loss: 0.3383544087409973 Acc:1.0
+step: 500, Loss: 0.3150579333305359 Acc:1.0
+step: 600, Loss: 0.30369025468826294 Acc:1.0
+step: 700, Loss: 0.3241116404533386 Acc:1.0
+step: 800, Loss: 0.27649012207984924 Acc:1.0
+step: 900, Loss: 0.30296021699905396 Acc:1.0
+step: 1000, Loss: 0.276663601398468 Acc:1.0
+step: 1100, Loss: 0.26935291290283203 Acc:1.0
+step: 1200, Loss: 0.28055399656295776 Acc:1.0
+step: 1300, Loss: 0.27228641510009766 Acc:1.0
+step: 1400, Loss: 0.26977524161338806 Acc:1.0
+step: 1500, Loss: 0.27184075117111206 Acc:1.0
+step: 1600, Loss: 0.2676677405834198 Acc:1.0
+step: 1700, Loss: 0.26604753732681274 Acc:1.0
+step: 1800, Loss: 0.2821498513221741 Acc:1.0
+step: 1900, Loss: 0.2714237868785858 Acc:1.0
+step: 2000, Loss: 0.2665286660194397 Acc:1.0
+step: 2100, Loss: 0.2658054828643799 Acc:1.0
+step: 2200, Loss: 0.26842039823532104 Acc:1.0
+step: 2300, Loss: 0.26653748750686646 Acc:1.0
+step: 2400, Loss: 0.2681986689567566 Acc:1.0
+step: 2500, Loss: 0.2647937536239624 Acc:1.0
+step: 2600, Loss: 0.2660192549228668 Acc:1.0
+step: 2700, Loss: 0.26597151160240173 Acc:1.0
+step: 2800, Loss: 0.26594772934913635 Acc:1.0
+step: 2900, Loss: 0.2651914358139038 Acc:1.0
+step: 3000, Loss: 0.2688050866127014 Acc:1.0
+step: 3100, Loss: 0.2646607756614685 Acc:1.0
+step: 3200, Loss: 0.2713034152984619 Acc:1.0
+step: 3300, Loss: 0.26825812458992004 Acc:1.0
+step: 3400, Loss: 0.2649396061897278 Acc:1.0
+step: 3500, Loss: 0.2787413001060486 Acc:1.0
+step: 3600, Loss: 0.27310997247695923 Acc:1.0
+step: 3700, Loss: 0.2676374018192291 Acc:1.0
+step: 3800, Loss: 0.26915979385375977 Acc:1.0
+step: 3900, Loss: 0.2649519145488739 Acc:1.0
+step: 4000, Loss: 0.2706579864025116 Acc:1.0
+step: 4100, Loss: 0.268260657787323 Acc:1.0
+step: 4200, Loss: 0.2658414840698242 Acc:1.0
+step: 4300, Loss: 0.2666953206062317 Acc:1.0
+step: 4400, Loss: 0.26827767491340637 Acc:1.0
+step: 4500, Loss: 0.2647413909435272 Acc:1.0
+step: 4600, Loss: 0.3909819424152374 Acc:1.0
+step: 4700, Loss: 0.26944446563720703 Acc:1.0
+step: 4800, Loss: 0.2658848464488983 Acc:1.0
+step: 4900, Loss: 0.2661813497543335 Acc:1.0
+training successfully ended.
+validating...
+validate data length:52
+acc: 0.9583333333333334
+precision: 0.9310344827586207
+recall: 1.0
+F_score: 0.9642857142857143
+******fold 2******
+
+in cross val model path:/home/sjf/eegall/intermodel/modelsave8/Valence-norm-lr5e-05FACED10_11_5000_scebaseseed74fold_best_model.pth
+Training... train_data length:468
+step: 0, Loss: 0.28858813643455505 Acc:1.0
+step: 100, Loss: 0.26873278617858887 Acc:1.0
+step: 200, Loss: 0.26439976692199707 Acc:1.0
+step: 300, Loss: 0.39035096764564514 Acc:1.0
+step: 400, Loss: 0.2647717595100403 Acc:1.0
+step: 500, Loss: 0.2672082483768463 Acc:1.0
+step: 600, Loss: 0.2685072124004364 Acc:1.0
+step: 700, Loss: 0.26587972044944763 Acc:1.0
+step: 800, Loss: 0.2715340256690979 Acc:1.0
+step: 900, Loss: 0.26688650250434875 Acc:1.0
+step: 1000, Loss: 0.2643618583679199 Acc:1.0
+step: 1100, Loss: 0.2688685953617096 Acc:1.0
+step: 1200, Loss: 0.26744216680526733 Acc:1.0
+step: 1300, Loss: 0.26575517654418945 Acc:1.0
+step: 1400, Loss: 0.2672894597053528 Acc:1.0
+step: 1500, Loss: 0.2673286199569702 Acc:1.0
+step: 1600, Loss: 0.2663939595222473 Acc:1.0
+step: 1700, Loss: 0.2672630548477173 Acc:1.0
+step: 1800, Loss: 0.26437681913375854 Acc:1.0
+step: 1900, Loss: 0.26653677225112915 Acc:1.0
+step: 2000, Loss: 0.26761797070503235 Acc:1.0
+step: 2100, Loss: 0.26509732007980347 Acc:1.0
+step: 2200, Loss: 0.26624587178230286 Acc:1.0
+step: 2300, Loss: 0.26895081996917725 Acc:1.0
+step: 2400, Loss: 0.26488110423088074 Acc:1.0
+step: 2500, Loss: 0.26573991775512695 Acc:1.0
+step: 2600, Loss: 0.2648729681968689 Acc:1.0
+step: 2700, Loss: 0.2671937346458435 Acc:1.0
+step: 2800, Loss: 0.2654041051864624 Acc:1.0
+step: 2900, Loss: 0.2649104595184326 Acc:1.0
+step: 3000, Loss: 0.2664673328399658 Acc:1.0
+step: 3100, Loss: 0.2669220268726349 Acc:1.0
+step: 3200, Loss: 0.2657166123390198 Acc:1.0
+step: 3300, Loss: 0.2692529559135437 Acc:1.0
+step: 3400, Loss: 0.26628750562667847 Acc:1.0
+step: 3500, Loss: 0.26597246527671814 Acc:1.0
+step: 3600, Loss: 0.2678999900817871 Acc:1.0
+step: 3700, Loss: 0.2651698887348175 Acc:1.0
+step: 3800, Loss: 0.26510870456695557 Acc:1.0
+step: 3900, Loss: 0.26720020174980164 Acc:1.0
+step: 4000, Loss: 0.2649917006492615 Acc:1.0
+step: 4100, Loss: 0.2659114897251129 Acc:1.0
+step: 4200, Loss: 0.2667687237262726 Acc:1.0
+step: 4300, Loss: 0.26474642753601074 Acc:1.0
+step: 4400, Loss: 0.26609355211257935 Acc:1.0
+step: 4500, Loss: 0.26609930396080017 Acc:1.0
+step: 4600, Loss: 0.38835829496383667 Acc:1.0
+step: 4700, Loss: 0.2660229504108429 Acc:1.0
+step: 4800, Loss: 0.2671111226081848 Acc:1.0
+step: 4900, Loss: 0.2649153470993042 Acc:1.0
+training successfully ended.
+validating...
+validate data length:52
+acc: 1.0
+precision: 1.0
+recall: 1.0
+F_score: 1.0
+******fold 3******
+
+in cross val model path:/home/sjf/eegall/intermodel/modelsave8/Valence-norm-lr5e-05FACED10_11_5000_scebaseseed74fold_best_model.pth
+Training... train_data length:468
+step: 0, Loss: 0.2686252295970917 Acc:1.0
+step: 100, Loss: 0.2651042938232422 Acc:1.0
+step: 200, Loss: 0.26446735858917236 Acc:1.0
+step: 300, Loss: 0.3887336254119873 Acc:1.0
+step: 400, Loss: 0.26493149995803833 Acc:1.0
+step: 500, Loss: 0.26496562361717224 Acc:1.0
+step: 600, Loss: 0.26953279972076416 Acc:1.0
+step: 700, Loss: 0.26506632566452026 Acc:1.0
+step: 800, Loss: 0.26628151535987854 Acc:1.0
+step: 900, Loss: 0.2657070755958557 Acc:1.0
+step: 1000, Loss: 0.2645845413208008 Acc:1.0
+step: 1100, Loss: 0.26502180099487305 Acc:1.0
+step: 1200, Loss: 0.26540762186050415 Acc:1.0
+step: 1300, Loss: 0.2643088102340698 Acc:1.0
+step: 1400, Loss: 0.2673945426940918 Acc:1.0
+step: 1500, Loss: 0.2654877305030823 Acc:1.0
+step: 1600, Loss: 0.2642234265804291 Acc:1.0
+step: 1700, Loss: 0.26635751128196716 Acc:1.0
+step: 1800, Loss: 0.26437997817993164 Acc:1.0
+step: 1900, Loss: 0.26562219858169556 Acc:1.0
+step: 2000, Loss: 0.2669236660003662 Acc:1.0
+step: 2100, Loss: 0.26438257098197937 Acc:1.0
+step: 2200, Loss: 0.26877036690711975 Acc:1.0
+step: 2300, Loss: 0.2654058635234833 Acc:1.0
+step: 2400, Loss: 0.2643357217311859 Acc:1.0
+step: 2500, Loss: 0.26591458916664124 Acc:1.0
+step: 2600, Loss: 0.2648252248764038 Acc:1.0
+step: 2700, Loss: 0.2642037868499756 Acc:1.0
+step: 2800, Loss: 0.26547592878341675 Acc:1.0
+step: 2900, Loss: 0.26513007283210754 Acc:1.0
+step: 3000, Loss: 0.26462236046791077 Acc:1.0
+step: 3100, Loss: 0.265453040599823 Acc:1.0
+step: 3200, Loss: 0.2645663022994995 Acc:1.0
+step: 3300, Loss: 0.2670297920703888 Acc:1.0
+step: 3400, Loss: 0.2663950026035309 Acc:1.0
+step: 3500, Loss: 0.2643980085849762 Acc:1.0
+step: 3600, Loss: 0.26540201902389526 Acc:1.0
+step: 3700, Loss: 0.26547807455062866 Acc:1.0
+step: 3800, Loss: 0.26581427454948425 Acc:1.0
+step: 3900, Loss: 0.26611676812171936 Acc:1.0
+step: 4000, Loss: 0.2646993100643158 Acc:1.0
+step: 4100, Loss: 0.2645292580127716 Acc:1.0
+step: 4200, Loss: 0.265597403049469 Acc:1.0
+step: 4300, Loss: 0.26525285840034485 Acc:1.0
+step: 4400, Loss: 0.26450368762016296 Acc:1.0
+step: 4500, Loss: 0.2653672993183136 Acc:1.0
+step: 4600, Loss: 0.3860624432563782 Acc:1.0
+step: 4700, Loss: 0.2645187973976135 Acc:1.0
+step: 4800, Loss: 0.2655850350856781 Acc:1.0
+step: 4900, Loss: 0.26541468501091003 Acc:1.0
+training successfully ended.
+validating...
+validate data length:52
+acc: 1.0
+precision: 1.0
+recall: 1.0
+F_score: 1.0
+******fold 4******
+
+in cross val model path:/home/sjf/eegall/intermodel/modelsave8/Valence-norm-lr5e-05FACED10_11_5000_scebaseseed74fold_best_model.pth
+Training... train_data length:468
+step: 0, Loss: 0.26833927631378174 Acc:1.0
+step: 100, Loss: 0.2671968936920166 Acc:1.0
+step: 200, Loss: 0.26461121439933777 Acc:1.0
+step: 300, Loss: 0.3886359930038452 Acc:1.0
+step: 400, Loss: 0.2669708728790283 Acc:1.0
+step: 500, Loss: 0.2643435001373291 Acc:1.0
+step: 600, Loss: 0.26685357093811035 Acc:1.0
+step: 700, Loss: 0.2650405764579773 Acc:1.0
+step: 800, Loss: 0.2648618519306183 Acc:1.0
+step: 900, Loss: 0.26682084798812866 Acc:1.0
+step: 1000, Loss: 0.2646033763885498 Acc:1.0
+step: 1100, Loss: 0.2654312252998352 Acc:1.0
+step: 1200, Loss: 0.2659321427345276 Acc:1.0
+step: 1300, Loss: 0.2648238241672516 Acc:1.0
+step: 1400, Loss: 0.2651175856590271 Acc:1.0
+step: 1500, Loss: 0.2668195962905884 Acc:1.0
+step: 1600, Loss: 0.26528292894363403 Acc:1.0
+step: 1700, Loss: 0.2656749188899994 Acc:1.0
+step: 1800, Loss: 0.26466983556747437 Acc:1.0
+step: 1900, Loss: 0.2642218768596649 Acc:1.0
+step: 2000, Loss: 0.26543617248535156 Acc:1.0
+step: 2100, Loss: 0.26470714807510376 Acc:1.0
+step: 2200, Loss: 0.2651711702346802 Acc:1.0
+step: 2300, Loss: 0.2662760317325592 Acc:1.0
+step: 2400, Loss: 0.26419511437416077 Acc:1.0
+step: 2500, Loss: 0.2678445875644684 Acc:1.0
+step: 2600, Loss: 0.2661408483982086 Acc:1.0
+step: 2700, Loss: 0.2652081549167633 Acc:1.0
+step: 2800, Loss: 0.26669183373451233 Acc:1.0
+step: 2900, Loss: 0.26489609479904175 Acc:1.0
+step: 3000, Loss: 0.26459401845932007 Acc:1.0
+step: 3100, Loss: 0.2650764584541321 Acc:1.0
+step: 3200, Loss: 0.2643282115459442 Acc:1.0
+step: 3300, Loss: 0.2648977041244507 Acc:1.0
+step: 3400, Loss: 0.26685434579849243 Acc:1.0
+step: 3500, Loss: 0.2648572623729706 Acc:1.0
+step: 3600, Loss: 0.2646251320838928 Acc:1.0
+step: 3700, Loss: 0.26576855778694153 Acc:1.0
+step: 3800, Loss: 0.2645494043827057 Acc:1.0
+step: 3900, Loss: 0.26512467861175537 Acc:1.0
+step: 4000, Loss: 0.264353483915329 Acc:1.0
+step: 4100, Loss: 0.26685094833374023 Acc:1.0
+step: 4200, Loss: 0.2663543224334717 Acc:1.0
+step: 4300, Loss: 0.2641328275203705 Acc:1.0
+step: 4400, Loss: 0.26783111691474915 Acc:1.0
+step: 4500, Loss: 0.2653239369392395 Acc:1.0
+step: 4600, Loss: 0.38651224970817566 Acc:1.0
+step: 4700, Loss: 0.26552125811576843 Acc:1.0
+step: 4800, Loss: 0.26499783992767334 Acc:1.0
+step: 4900, Loss: 0.2658114731311798 Acc:1.0
+training successfully ended.
+validating...
+validate data length:52
+acc: 1.0
+precision: 1.0
+recall: 1.0
+F_score: 1.0
+******fold 5******
+
+in cross val model path:/home/sjf/eegall/intermodel/modelsave8/Valence-norm-lr5e-05FACED10_11_5000_scebaseseed74fold_best_model.pth
+Training... train_data length:468
+step: 0, Loss: 0.2683413624763489 Acc:1.0
+step: 100, Loss: 0.2672833204269409 Acc:1.0
+step: 200, Loss: 0.2642955183982849 Acc:1.0
+step: 300, Loss: 0.3887225389480591 Acc:1.0
+step: 400, Loss: 0.26505762338638306 Acc:1.0
+step: 500, Loss: 0.2648567259311676 Acc:1.0
+step: 600, Loss: 0.2693693935871124 Acc:1.0
+step: 700, Loss: 0.2650394141674042 Acc:1.0
+step: 800, Loss: 0.2649456858634949 Acc:1.0
+step: 900, Loss: 0.2655165195465088 Acc:1.0
+step: 1000, Loss: 0.2645706534385681 Acc:1.0
+step: 1100, Loss: 0.2662898600101471 Acc:1.0
+step: 1200, Loss: 0.2659901976585388 Acc:1.0
+step: 1300, Loss: 0.26515692472457886 Acc:1.0
+step: 1400, Loss: 0.2646900415420532 Acc:1.0
+step: 1500, Loss: 0.2657744288444519 Acc:1.0
+step: 1600, Loss: 0.26484718918800354 Acc:1.0
+step: 1700, Loss: 0.26588836312294006 Acc:1.0
+step: 1800, Loss: 0.26525557041168213 Acc:1.0
+step: 1900, Loss: 0.26670679450035095 Acc:1.0
+step: 2000, Loss: 0.2674658000469208 Acc:1.0
+step: 2100, Loss: 0.2662792503833771 Acc:1.0
+step: 2200, Loss: 0.2645214796066284 Acc:1.0
+step: 2300, Loss: 0.26592016220092773 Acc:1.0
+step: 2400, Loss: 0.26505106687545776 Acc:1.0
+step: 2500, Loss: 0.26632562279701233 Acc:1.0
+step: 2600, Loss: 0.2662438750267029 Acc:1.0
+step: 2700, Loss: 0.2653317451477051 Acc:1.0
+step: 2800, Loss: 0.26537618041038513 Acc:1.0
+step: 2900, Loss: 0.265267014503479 Acc:1.0
+step: 3000, Loss: 0.2651521861553192 Acc:1.0
+step: 3100, Loss: 0.2643755078315735 Acc:1.0
+step: 3200, Loss: 0.2653140127658844 Acc:1.0
+step: 3300, Loss: 0.26513615250587463 Acc:1.0
+step: 3400, Loss: 0.2642480432987213 Acc:1.0
+step: 3500, Loss: 0.26622694730758667 Acc:1.0
+step: 3600, Loss: 0.26530805230140686 Acc:1.0
+step: 3700, Loss: 0.2647205591201782 Acc:1.0
+step: 3800, Loss: 0.2655373811721802 Acc:1.0
+step: 3900, Loss: 0.26497671008110046 Acc:1.0
+step: 4000, Loss: 0.2657044529914856 Acc:1.0
+step: 4100, Loss: 0.2666803300380707 Acc:1.0
+step: 4200, Loss: 0.2642953395843506 Acc:1.0
+step: 4300, Loss: 0.26461634039878845 Acc:1.0
+step: 4400, Loss: 0.2660524249076843 Acc:1.0
+step: 4500, Loss: 0.26433366537094116 Acc:1.0
+step: 4600, Loss: 0.38772135972976685 Acc:1.0
+step: 4700, Loss: 0.2651110887527466 Acc:1.0
+step: 4800, Loss: 0.26423341035842896 Acc:1.0
+step: 4900, Loss: 0.2660503089427948 Acc:1.0
+training successfully ended.
+validating...
+validate data length:52
+acc: 1.0
+precision: 1.0
+recall: 1.0
+F_score: 1.0
+******fold 6******
+
+in cross val model path:/home/sjf/eegall/intermodel/modelsave8/Valence-norm-lr5e-05FACED10_11_5000_scebaseseed74fold_best_model.pth
+Training... train_data length:468
+step: 0, Loss: 0.2685156464576721 Acc:1.0
+step: 100, Loss: 0.2652028501033783 Acc:1.0
+step: 200, Loss: 0.26473966240882874 Acc:1.0
+step: 300, Loss: 0.3900292217731476 Acc:1.0
+step: 400, Loss: 0.264814168214798 Acc:1.0
+step: 500, Loss: 0.26516368985176086 Acc:1.0
+step: 600, Loss: 0.264656662940979 Acc:1.0
+step: 700, Loss: 0.2689078748226166 Acc:1.0
+step: 800, Loss: 0.2724762260913849 Acc:1.0
+step: 900, Loss: 0.26445555686950684 Acc:1.0
+step: 1000, Loss: 0.26589247584342957 Acc:1.0
+step: 1100, Loss: 0.2652580142021179 Acc:1.0
+step: 1200, Loss: 0.264915406703949 Acc:1.0
+step: 1300, Loss: 0.26637616753578186 Acc:1.0
+step: 1400, Loss: 0.264606773853302 Acc:1.0
+step: 1500, Loss: 0.26433271169662476 Acc:1.0
+step: 1600, Loss: 0.2673760652542114 Acc:1.0
+step: 1700, Loss: 0.2649201452732086 Acc:1.0
+step: 1800, Loss: 0.2643800973892212 Acc:1.0
+step: 1900, Loss: 0.2657492756843567 Acc:1.0
+step: 2000, Loss: 0.2645057439804077 Acc:1.0
+step: 2100, Loss: 0.26642870903015137 Acc:1.0
+step: 2200, Loss: 0.2680005729198456 Acc:1.0
+step: 2300, Loss: 0.2648274302482605 Acc:1.0
+step: 2400, Loss: 0.26540857553482056 Acc:1.0
+step: 2500, Loss: 0.26575034856796265 Acc:1.0
+step: 2600, Loss: 0.26452556252479553 Acc:1.0
+step: 2700, Loss: 0.26465505361557007 Acc:1.0
+step: 2800, Loss: 0.26697710156440735 Acc:1.0
+step: 2900, Loss: 0.26462888717651367 Acc:1.0
+step: 3000, Loss: 0.2646498680114746 Acc:1.0
+step: 3100, Loss: 0.26599830389022827 Acc:1.0
+step: 3200, Loss: 0.2651568651199341 Acc:1.0
+step: 3300, Loss: 0.26578041911125183 Acc:1.0
+step: 3400, Loss: 0.26613932847976685 Acc:1.0
+step: 3500, Loss: 0.2645989954471588 Acc:1.0
+step: 3600, Loss: 0.26545774936676025 Acc:1.0
+step: 3700, Loss: 0.26637503504753113 Acc:1.0
+step: 3800, Loss: 0.2643846273422241 Acc:1.0
+step: 3900, Loss: 0.266997367143631 Acc:1.0
+step: 4000, Loss: 0.26542946696281433 Acc:1.0
+step: 4100, Loss: 0.26461049914360046 Acc:1.0
+step: 4200, Loss: 0.2657148838043213 Acc:1.0
+step: 4300, Loss: 0.2659146189689636 Acc:1.0
+step: 4400, Loss: 0.26474180817604065 Acc:1.0
+step: 4500, Loss: 0.26536571979522705 Acc:1.0
+step: 4600, Loss: 0.389973521232605 Acc:1.0
+step: 4700, Loss: 0.26440727710723877 Acc:1.0
+step: 4800, Loss: 0.26514774560928345 Acc:1.0
+step: 4900, Loss: 0.2650463283061981 Acc:1.0
+training successfully ended.
+validating...
+validate data length:52
+acc: 1.0
+precision: 1.0
+recall: 1.0
+F_score: 1.0
+******fold 7******
+
+in cross val model path:/home/sjf/eegall/intermodel/modelsave8/Valence-norm-lr5e-05FACED10_11_5000_scebaseseed74fold_best_model.pth
+Training... train_data length:468
+step: 0, Loss: 0.26850372552871704 Acc:1.0
+step: 100, Loss: 0.2650378942489624 Acc:1.0
+step: 200, Loss: 0.26426541805267334 Acc:1.0
+step: 300, Loss: 0.3878171145915985 Acc:1.0
+step: 400, Loss: 0.2644469439983368 Acc:1.0
+--------- DEAP DATA ---------
+
+*********** ALL Loaded data ***************
+
+base_x: torch.Size([32, 760, 40, 7]), harm_x: torch.Size([32, 760, 40, 7]) all_labels: torch.Size([32, 760, 4]) 
+ base_graph: torch.Size([32, 760, 40, 40]) harm_graph: torch.Size([32, 760, 40, 40])
+
+this is with limit version
+Uing base graph and base feature for Time Graph part and harm feature for encoding!
+before val model path:/home/sjf/eegall/intermodel/modelsave8//home/sjf/eegall/intermodel/modelsave8/Arousal-norm-lr5e-05DEAP10_38_5000_scebaseseed74fold_best_model.pth
+******** mix subject_0 ********
+
+[228, 532]
+******fold 1******
+
+*******Initializing new model*******
+Training... train_data length:957
+step: 0, Loss: 18.735567092895508 Acc:0.39473684210526316
+step: 100, Loss: 10.0514497756958 Acc:0.7631578947368421
+step: 200, Loss: 6.343437671661377 Acc:0.868421052631579
+step: 300, Loss: 4.781564712524414 Acc:0.9210526315789473
+step: 400, Loss: 4.100862979888916 Acc:0.9473684210526315
+step: 500, Loss: 2.0362548828125 Acc:0.9736842105263158
+step: 600, Loss: 1.0931214094161987 Acc:0.9736842105263158
+step: 700, Loss: 0.6243432760238647 Acc:1.0
+step: 800, Loss: 0.46632009744644165 Acc:1.0
+step: 900, Loss: 0.23067256808280945 Acc:1.0
+step: 1000, Loss: 0.16362182796001434 Acc:1.0
+step: 1100, Loss: 0.23723462224006653 Acc:1.0
+step: 1200, Loss: 0.152705579996109 Acc:1.0
+step: 1300, Loss: 0.1301652193069458 Acc:1.0
+step: 1400, Loss: 0.13861268758773804 Acc:1.0
+step: 1500, Loss: 0.8351414799690247 Acc:0.9736842105263158
+step: 1600, Loss: 0.17808133363723755 Acc:1.0
+step: 1700, Loss: 2.7726681232452393 Acc:0.9473684210526315
+step: 1800, Loss: 0.12993836402893066 Acc:1.0
+step: 1900, Loss: 1.5388933420181274 Acc:0.9736842105263158
+step: 2000, Loss: 0.18327385187149048 Acc:1.0
+step: 2100, Loss: 1.0509312152862549 Acc:0.9736842105263158
+step: 2200, Loss: 0.15877163410186768 Acc:1.0
+step: 2300, Loss: 0.12451288849115372 Acc:1.0
+step: 2400, Loss: 0.856558084487915 Acc:0.9736842105263158
+step: 2500, Loss: 0.1287354975938797 Acc:1.0
+step: 2600, Loss: 0.12705262005329132 Acc:1.0
+step: 2700, Loss: 0.1176074892282486 Acc:1.0
+step: 2800, Loss: 0.2884996831417084 Acc:1.0
+step: 2900, Loss: 1.7693589925765991 Acc:0.9736842105263158
+step: 3000, Loss: 0.13077525794506073 Acc:1.0
+step: 3100, Loss: 0.12364524602890015 Acc:1.0
+step: 3200, Loss: 0.3579341769218445 Acc:1.0
+step: 3300, Loss: 0.12625372409820557 Acc:1.0
+step: 3400, Loss: 0.11356453597545624 Acc:1.0
+step: 3500, Loss: 0.12055039405822754 Acc:1.0
+step: 3600, Loss: 0.11557497084140778 Acc:1.0
+step: 3700, Loss: 0.11830715835094452 Acc:1.0
+step: 3800, Loss: 0.11728016287088394 Acc:1.0
+step: 3900, Loss: 0.12473147362470627 Acc:1.0
+step: 4000, Loss: 0.11917954683303833 Acc:1.0
+step: 4100, Loss: 0.11851106584072113 Acc:1.0
+step: 4200, Loss: 0.12274876981973648 Acc:1.0
+step: 4300, Loss: 1.0903376340866089 Acc:0.9736842105263158
+step: 4400, Loss: 0.11917158961296082 Acc:1.0
+step: 4500, Loss: 2.5215718746185303 Acc:0.9736842105263158
+step: 4600, Loss: 0.14678439497947693 Acc:1.0
+step: 4700, Loss: 1.2828377485275269 Acc:0.9736842105263158
+step: 4800, Loss: 0.11759045720100403 Acc:1.0
+step: 4900, Loss: 0.11425847560167313 Acc:1.0
+training successfully ended.
+validating...
+validate data length:107
+acc: 0.8431372549019608
+precision: 0.8571428571428571
+recall: 0.8571428571428571
+F_score: 0.8571428571428571
+******fold 2******
+
+in cross val model path:/home/sjf/eegall/intermodel/modelsave8/Arousal-norm-lr5e-05DEAP10_38_5000_scebaseseed74fold_best_model.pth
+Training... train_data length:957
+step: 0, Loss: 12.686684608459473 Acc:0.8421052631578947
+step: 100, Loss: 0.20441898703575134 Acc:1.0
+step: 200, Loss: 0.15253165364265442 Acc:1.0
+step: 300, Loss: 0.24393826723098755 Acc:1.0
+step: 400, Loss: 0.14703667163848877 Acc:1.0
+step: 500, Loss: 0.14316695928573608 Acc:1.0
+step: 600, Loss: 0.12805084884166718 Acc:1.0
+step: 700, Loss: 0.135030135512352 Acc:1.0
+step: 800, Loss: 0.12679672241210938 Acc:1.0
+step: 900, Loss: 0.12864646315574646 Acc:1.0
+step: 1000, Loss: 0.12139807641506195 Acc:1.0
+step: 1100, Loss: 0.13460282981395721 Acc:1.0
+step: 1200, Loss: 0.148790180683136 Acc:1.0
+step: 1300, Loss: 0.1370067596435547 Acc:1.0
+step: 1400, Loss: 0.11771100014448166 Acc:1.0
+step: 1500, Loss: 0.12048216164112091 Acc:1.0
+step: 1600, Loss: 0.13839054107666016 Acc:1.0
+step: 1700, Loss: 0.1409456431865692 Acc:1.0
+step: 1800, Loss: 0.11244804412126541 Acc:1.0
+step: 1900, Loss: 0.16055214405059814 Acc:1.0
+step: 2000, Loss: 0.12358321994543076 Acc:1.0
+step: 2100, Loss: 0.11832618713378906 Acc:1.0
+step: 2200, Loss: 0.12649820744991302 Acc:1.0
+step: 2300, Loss: 0.11856576055288315 Acc:1.0
+step: 2400, Loss: 0.12321215867996216 Acc:1.0
+step: 2500, Loss: 0.12010304629802704 Acc:1.0
+step: 2600, Loss: 0.11520768702030182 Acc:1.0
+step: 2700, Loss: 0.11582119017839432 Acc:1.0
+step: 2800, Loss: 0.11978356540203094 Acc:1.0
+step: 2900, Loss: 0.12096495181322098 Acc:1.0
+step: 3000, Loss: 0.12359066307544708 Acc:1.0
+step: 3100, Loss: 0.1193561777472496 Acc:1.0
+step: 3200, Loss: 0.11686646193265915 Acc:1.0
+step: 3300, Loss: 0.11509299278259277 Acc:1.0
+step: 3400, Loss: 0.11529432237148285 Acc:1.0
+step: 3500, Loss: 0.1131034791469574 Acc:1.0
+step: 3600, Loss: 0.11467798054218292 Acc:1.0
+step: 3700, Loss: 0.11718031018972397 Acc:1.0
+step: 3800, Loss: 0.11566218733787537 Acc:1.0
+step: 3900, Loss: 0.11356543749570847 Acc:1.0
+step: 4000, Loss: 0.11542423069477081 Acc:1.0
+step: 4100, Loss: 0.11481867730617523 Acc:1.0
+step: 4200, Loss: 0.11522690951824188 Acc:1.0
+step: 4300, Loss: 0.11628828197717667 Acc:1.0
+step: 4400, Loss: 0.11374557018280029 Acc:1.0
+step: 4500, Loss: 0.11454441398382187 Acc:1.0
+step: 4600, Loss: 0.11968652158975601 Acc:1.0
+step: 4700, Loss: 0.1109733060002327 Acc:1.0
+step: 4800, Loss: 0.112791046500206 Acc:1.0
+step: 4900, Loss: 0.110615573823452 Acc:1.0
+training successfully ended.
+validating...
+validate data length:107
+acc: 0.9411764705882353
+precision: 0.8695652173913043
+recall: 1.0
+F_score: 0.9302325581395349
+******fold 3******
+
+in cross val model path:/home/sjf/eegall/intermodel/modelsave8/Arousal-norm-lr5e-05DEAP10_38_5000_scebaseseed74fold_best_model.pth
+Training... train_data length:957
+step: 0, Loss: 0.24773964285850525 Acc:1.0
+step: 100, Loss: 0.11101466417312622 Acc:1.0
+step: 200, Loss: 0.11189524084329605 Acc:1.0
+step: 300, Loss: 0.11051342636346817 Acc:1.0
+step: 400, Loss: 0.11128699034452438 Acc:1.0
+step: 500, Loss: 0.11763519048690796 Acc:1.0
+step: 600, Loss: 0.11776034533977509 Acc:1.0
+step: 700, Loss: 0.11009325087070465 Acc:1.0
+step: 800, Loss: 0.11126844584941864 Acc:1.0
+step: 900, Loss: 0.11022549867630005 Acc:1.0
+step: 1000, Loss: 0.10999380797147751 Acc:1.0
+step: 1100, Loss: 0.10958261787891388 Acc:1.0
+step: 1200, Loss: 0.11017511785030365 Acc:1.0
+step: 1300, Loss: 0.11286664754152298 Acc:1.0
+step: 1400, Loss: 0.10952010005712509 Acc:1.0
+step: 1500, Loss: 0.1114192008972168 Acc:1.0
+step: 1600, Loss: 0.11319088935852051 Acc:1.0
+step: 1700, Loss: 0.10977310687303543 Acc:1.0
+step: 1800, Loss: 0.10978275537490845 Acc:1.0
+step: 1900, Loss: 0.10991528630256653 Acc:1.0
+step: 2000, Loss: 0.10946648567914963 Acc:1.0
+step: 2100, Loss: 0.10939695686101913 Acc:1.0
+step: 2200, Loss: 0.1098853349685669 Acc:1.0
+step: 2300, Loss: 0.10957914590835571 Acc:1.0
+step: 2400, Loss: 0.10934754461050034 Acc:1.0
+step: 2500, Loss: 0.10968687385320663 Acc:1.0
+step: 2600, Loss: 0.11235462129116058 Acc:1.0
+step: 2700, Loss: 0.10933324694633484 Acc:1.0
+step: 2800, Loss: 0.1104205846786499 Acc:1.0
+step: 2900, Loss: 0.11046358942985535 Acc:1.0
+step: 3000, Loss: 0.11010639369487762 Acc:1.0
+step: 3100, Loss: 0.10982093214988708 Acc:1.0
+step: 3200, Loss: 0.11068562418222427 Acc:1.0
+step: 3300, Loss: 0.11025281995534897 Acc:1.0
+step: 3400, Loss: 0.11024955660104752 Acc:1.0
+step: 3500, Loss: 0.10957416146993637 Acc:1.0
+step: 3600, Loss: 0.10966181755065918 Acc:1.0
+step: 3700, Loss: 0.11221237480640411 Acc:1.0
+step: 3800, Loss: 0.11128881573677063 Acc:1.0
+step: 3900, Loss: 0.10978871583938599 Acc:1.0
+step: 4000, Loss: 0.10986633598804474 Acc:1.0
+step: 4100, Loss: 0.10937750339508057 Acc:1.0
+step: 4200, Loss: 0.10970911383628845 Acc:1.0
+step: 4300, Loss: 0.10985466092824936 Acc:1.0
+step: 500, Loss: 0.26481369137763977 Acc:1.0
+step: 600, Loss: 0.26978957653045654 Acc:1.0
+step: 700, Loss: 0.26487118005752563 Acc:1.0
+step: 800, Loss: 0.2660071849822998 Acc:1.0
+step: 900, Loss: 0.2651435434818268 Acc:1.0
+step: 1000, Loss: 0.26423031091690063 Acc:1.0
+step: 1100, Loss: 0.26706454157829285 Acc:1.0
+step: 1200, Loss: 0.2648438811302185 Acc:1.0
+step: 1300, Loss: 0.26468950510025024 Acc:1.0
+step: 1400, Loss: 0.2670077979564667 Acc:1.0
+step: 1500, Loss: 0.26522523164749146 Acc:1.0
+step: 1600, Loss: 0.2652531862258911 Acc:1.0
+step: 1700, Loss: 0.2661029100418091 Acc:1.0
+step: 1800, Loss: 0.26430076360702515 Acc:1.0
+step: 1900, Loss: 0.2682792544364929 Acc:1.0
+step: 2000, Loss: 0.26504236459732056 Acc:1.0
+step: 2100, Loss: 0.2653105854988098 Acc:1.0
+step: 2200, Loss: 0.2663283050060272 Acc:1.0
+step: 2300, Loss: 0.26428601145744324 Acc:1.0
+step: 2400, Loss: 0.26488083600997925 Acc:1.0
+step: 2500, Loss: 0.2655681371688843 Acc:1.0
+step: 2600, Loss: 0.2644599378108978 Acc:1.0
+step: 2700, Loss: 0.26554277539253235 Acc:1.0
+step: 2800, Loss: 0.2652915120124817 Acc:1.0
+step: 2900, Loss: 0.2641366124153137 Acc:1.0
+step: 3000, Loss: 0.266075074672699 Acc:1.0
+step: 3100, Loss: 0.26534393429756165 Acc:1.0
+step: 3200, Loss: 0.2642022967338562 Acc:1.0
+step: 3300, Loss: 0.265687495470047 Acc:1.0
+step: 3400, Loss: 0.26450327038764954 Acc:1.0
+step: 3500, Loss: 0.2656800448894501 Acc:1.0
+step: 3600, Loss: 0.2663193941116333 Acc:1.0
+step: 3700, Loss: 0.26478129625320435 Acc:1.0
+step: 3800, Loss: 0.26726335287094116 Acc:1.0
+step: 3900, Loss: 0.26512178778648376 Acc:1.0
+step: 4000, Loss: 0.2643905282020569 Acc:1.0
+step: 4100, Loss: 0.2651374042034149 Acc:1.0
+step: 4200, Loss: 0.2641512155532837 Acc:1.0
+step: 4300, Loss: 0.2648636996746063 Acc:1.0
+step: 4400, Loss: 0.2651793360710144 Acc:1.0
+step: 4500, Loss: 0.2641666531562805 Acc:1.0
+step: 4600, Loss: 0.3870648443698883 Acc:1.0
+step: 4700, Loss: 0.2651612460613251 Acc:1.0
+step: 4800, Loss: 0.2645377516746521 Acc:1.0
+step: 4900, Loss: 0.26493242383003235 Acc:1.0
+training successfully ended.
+validating...
+validate data length:52
+acc: 1.0
+precision: 1.0
+recall: 1.0
+F_score: 1.0
+******fold 8******
+
+in cross val model path:/home/sjf/eegall/intermodel/modelsave8/Valence-norm-lr5e-05FACED10_11_5000_scebaseseed74fold_best_model.pth
+Training... train_data length:468
+step: 0, Loss: 0.2684628665447235 Acc:1.0
+step: 100, Loss: 0.2645595967769623 Acc:1.0
+step: 200, Loss: 0.2649117708206177 Acc:1.0
+step: 300, Loss: 0.38808614015579224 Acc:1.0
+step: 400, Loss: 0.26458972692489624 Acc:1.0
+step: 500, Loss: 0.26522451639175415 Acc:1.0
+step: 600, Loss: 0.26942992210388184 Acc:1.0
+step: 700, Loss: 0.26488766074180603 Acc:1.0
+step: 800, Loss: 0.2653513550758362 Acc:1.0
+step: 900, Loss: 0.26630908250808716 Acc:1.0
+step: 1000, Loss: 0.26423487067222595 Acc:1.0
+step: 1100, Loss: 0.2664032578468323 Acc:1.0
+step: 1200, Loss: 0.26556286215782166 Acc:1.0
+step: 1300, Loss: 0.2652381658554077 Acc:1.0
+step: 1400, Loss: 0.26723021268844604 Acc:1.0
+step: 1500, Loss: 0.2672906219959259 Acc:1.0
+step: 1600, Loss: 0.26602762937545776 Acc:1.0
+step: 1700, Loss: 0.26906079053878784 Acc:1.0
+step: 1800, Loss: 0.26449161767959595 Acc:1.0
+step: 1900, Loss: 0.26568129658699036 Acc:1.0
+step: 2000, Loss: 0.2652151882648468 Acc:1.0
+step: 2100, Loss: 0.2645995616912842 Acc:1.0
+step: 2200, Loss: 0.2668735086917877 Acc:1.0
+step: 2300, Loss: 0.26631438732147217 Acc:1.0
+step: 2400, Loss: 0.2648230493068695 Acc:1.0
+step: 2500, Loss: 0.2657936215400696 Acc:1.0
+step: 2600, Loss: 0.2647736370563507 Acc:1.0
+step: 2700, Loss: 0.26515260338783264 Acc:1.0
+step: 2800, Loss: 0.26684999465942383 Acc:1.0
+step: 2900, Loss: 0.2651061415672302 Acc:1.0
+step: 3000, Loss: 0.2652144134044647 Acc:1.0
+step: 3100, Loss: 0.2657248377799988 Acc:1.0
+step: 3200, Loss: 0.26457202434539795 Acc:1.0
+step: 3300, Loss: 0.2662692070007324 Acc:1.0
+step: 3400, Loss: 0.2653278708457947 Acc:1.0
+step: 3500, Loss: 0.26484182476997375 Acc:1.0
+step: 3600, Loss: 0.2659245431423187 Acc:1.0
+step: 3700, Loss: 0.26461920142173767 Acc:1.0
+step: 3800, Loss: 0.26724332571029663 Acc:1.0
+step: 3900, Loss: 0.266299843788147 Acc:1.0
+step: 4000, Loss: 0.26440584659576416 Acc:1.0
+step: 4100, Loss: 0.2655872106552124 Acc:1.0
+step: 4200, Loss: 0.26514291763305664 Acc:1.0
+step: 4300, Loss: 0.2645004987716675 Acc:1.0
+step: 4400, Loss: 0.2665805220603943 Acc:1.0
+step: 4500, Loss: 0.264769047498703 Acc:1.0
+step: 4600, Loss: 0.38647353649139404 Acc:1.0
+step: 4700, Loss: 0.26470011472702026 Acc:1.0
+step: 4800, Loss: 0.264353483915329 Acc:1.0
+step: 4900, Loss: 0.26511427760124207 Acc:1.0
+training successfully ended.
+validating...
+validate data length:52
+acc: 1.0
+precision: 1.0
+recall: 1.0
+F_score: 1.0
+******fold 9******
+
+in cross val model path:/home/sjf/eegall/intermodel/modelsave8/Valence-norm-lr5e-05FACED10_11_5000_scebaseseed74fold_best_model.pth
+Training... train_data length:468
+step: 0, Loss: 0.26905855536460876 Acc:1.0
+step: 100, Loss: 0.2647523880004883 Acc:1.0
+step: 200, Loss: 0.2656664252281189 Acc:1.0
+step: 300, Loss: 0.39019957184791565 Acc:1.0
+step: 400, Loss: 0.2645101845264435 Acc:1.0
+step: 500, Loss: 0.2660481631755829 Acc:1.0
+step: 600, Loss: 0.2653970420360565 Acc:1.0
+step: 700, Loss: 0.26453104615211487 Acc:1.0
+step: 800, Loss: 0.27022698521614075 Acc:1.0
+step: 900, Loss: 0.2648577094078064 Acc:1.0
+step: 1000, Loss: 0.26643499732017517 Acc:1.0
+step: 1100, Loss: 0.26745620369911194 Acc:1.0
+step: 1200, Loss: 0.264719694852829 Acc:1.0
+step: 1300, Loss: 0.2648298740386963 Acc:1.0
+step: 1400, Loss: 0.2653738856315613 Acc:1.0
+step: 1500, Loss: 0.26429444551467896 Acc:1.0
+step: 1600, Loss: 0.26540058851242065 Acc:1.0
+step: 1700, Loss: 0.26513752341270447 Acc:1.0
+step: 1800, Loss: 0.264519065618515 Acc:1.0
+step: 1900, Loss: 0.26681607961654663 Acc:1.0
+step: 2000, Loss: 0.2646907866001129 Acc:1.0
+step: 2100, Loss: 0.26535722613334656 Acc:1.0
+step: 2200, Loss: 0.26627618074417114 Acc:1.0
+step: 2300, Loss: 0.26433372497558594 Acc:1.0
+step: 2400, Loss: 0.26578447222709656 Acc:1.0
+step: 2500, Loss: 0.2660725712776184 Acc:1.0
+step: 2600, Loss: 0.2644830346107483 Acc:1.0
+step: 2700, Loss: 0.26568737626075745 Acc:1.0
+step: 2800, Loss: 0.26420673727989197 Acc:1.0
+step: 2900, Loss: 0.2652413547039032 Acc:1.0
+step: 3000, Loss: 0.26566168665885925 Acc:1.0
+step: 3100, Loss: 0.26431629061698914 Acc:1.0
+step: 3200, Loss: 0.26640409231185913 Acc:1.0
+step: 3300, Loss: 0.2650674879550934 Acc:1.0
+step: 3400, Loss: 0.2641673982143402 Acc:1.0
+step: 3500, Loss: 0.26512080430984497 Acc:1.0
+step: 3600, Loss: 0.26450085639953613 Acc:1.0
+step: 3700, Loss: 0.26473623514175415 Acc:1.0
+step: 3800, Loss: 0.26648521423339844 Acc:1.0
+step: 3900, Loss: 0.2647451162338257 Acc:1.0
+step: 4000, Loss: 0.26505786180496216 Acc:1.0
+step: 4100, Loss: 0.2650867700576782 Acc:1.0
+step: 4200, Loss: 0.2650589346885681 Acc:1.0
+step: 4300, Loss: 0.2663063108921051 Acc:1.0
+step: 4400, Loss: 0.2646142840385437 Acc:1.0
+step: 4500, Loss: 0.2665886878967285 Acc:1.0
+step: 4600, Loss: 0.38924267888069153 Acc:1.0
+step: 4700, Loss: 0.2648095190525055 Acc:1.0
+step: 4800, Loss: 0.2679044008255005 Acc:1.0
+step: 4900, Loss: 0.26544851064682007 Acc:1.0
+training successfully ended.
+validating...
+validate data length:52
+acc: 1.0
+precision: 1.0
+recall: 1.0
+F_score: 1.0
+******fold 10******
+
+in cross val model path:/home/sjf/eegall/intermodel/modelsave8/Valence-norm-lr5e-05FACED10_11_5000_scebaseseed74fold_best_model.pth
+Training... train_data length:468
+step: 0, Loss: 0.2685198485851288 Acc:1.0
+step: 100, Loss: 0.26507502794265747 Acc:1.0
+step: 200, Loss: 0.2646283805370331 Acc:1.0
+step: 300, Loss: 0.3893720209598541 Acc:1.0
+step: 400, Loss: 0.2649291753768921 Acc:1.0
+step: 500, Loss: 0.26501330733299255 Acc:1.0
+step: 600, Loss: 0.266978919506073 Acc:1.0
+step: 700, Loss: 0.26422038674354553 Acc:1.0
+step: 800, Loss: 0.26899057626724243 Acc:1.0
+step: 900, Loss: 0.26520437002182007 Acc:1.0
+step: 1000, Loss: 0.2644321024417877 Acc:1.0
+step: 1100, Loss: 0.26595139503479004 Acc:1.0
+step: 1200, Loss: 0.265000581741333 Acc:1.0
+step: 1300, Loss: 0.264457106590271 Acc:1.0
+step: 1400, Loss: 0.26582497358322144 Acc:1.0
+step: 1500, Loss: 0.26557159423828125 Acc:1.0
+step: 1600, Loss: 0.26486045122146606 Acc:1.0
+step: 1700, Loss: 0.26629841327667236 Acc:1.0
+step: 1800, Loss: 0.26457059383392334 Acc:1.0
+step: 1900, Loss: 0.2665383219718933 Acc:1.0
+step: 2000, Loss: 0.2659994661808014 Acc:1.0
+step: 2100, Loss: 0.2651674449443817 Acc:1.0
+step: 2200, Loss: 0.26570749282836914 Acc:1.0
+step: 2300, Loss: 0.26418328285217285 Acc:1.0
+step: 2400, Loss: 0.265636146068573 Acc:1.0
+step: 2500, Loss: 0.265819251537323 Acc:1.0
+step: 2600, Loss: 0.26439613103866577 Acc:1.0
+step: 2700, Loss: 0.26655715703964233 Acc:1.0
+step: 2800, Loss: 0.26473701000213623 Acc:1.0
+step: 2900, Loss: 0.2645222246646881 Acc:1.0
+step: 3000, Loss: 0.2672269940376282 Acc:1.0
+step: 3100, Loss: 0.2644987106323242 Acc:1.0
+step: 3200, Loss: 0.2642999291419983 Acc:1.0
+step: 3300, Loss: 0.26474523544311523 Acc:1.0
+step: 3400, Loss: 0.26433444023132324 Acc:1.0
+step: 3500, Loss: 0.2663673162460327 Acc:1.0
+step: 3600, Loss: 0.2675263285636902 Acc:1.0
+step: 3700, Loss: 0.2643364667892456 Acc:1.0
+step: 3800, Loss: 0.265371710062027 Acc:1.0
+step: 3900, Loss: 0.26490089297294617 Acc:1.0
+step: 4000, Loss: 0.26455771923065186 Acc:1.0
+step: 4100, Loss: 0.26465222239494324 Acc:1.0
+step: 4200, Loss: 0.26533782482147217 Acc:1.0
+step: 4300, Loss: 0.2683499753475189 Acc:1.0
+step: 4400, Loss: 0.26637041568756104 Acc:1.0
+step: 4500, Loss: 0.266024112701416 Acc:1.0
+step: 4600, Loss: 0.38967370986938477 Acc:1.0
+step: 4700, Loss: 0.2650752663612366 Acc:1.0
+step: 4800, Loss: 0.26604539155960083 Acc:1.0
+step: 4900, Loss: 0.26559045910835266 Acc:1.0
+training successfully ended.
+validating...
+validate data length:52
+acc: 1.0
+precision: 1.0
+recall: 1.0
+F_score: 1.0
+subject 0 Avgacc: 0.9958333333333333 Avgfscore: 0.9964285714285716 
+ Max acc:1.0, Max f score:1.0 Avg Recall:1.0 Max Recall:1.0 Avg Precision:0.993103448275862 Max Precision:1.0
+******** mix subject_1 ********
+
+[104, 208]
+******fold 1******
+
+in cross val model path:/home/sjf/eegall/intermodel/modelsave8/Valence-norm-lr5e-05FACED10_11_5000_scebaseseed74fold_best_model.pth
+Training... train_data length:374
+step: 0, Loss: 10.424904823303223 Acc:0.5454545454545454
+step: 100, Loss: 2.0899384021759033 Acc:0.8181818181818182
+step: 200, Loss: 0.6547579169273376 Acc:1.0
+step: 300, Loss: 0.2891196310520172 Acc:1.0
+step: 400, Loss: 0.2759818136692047 Acc:1.0
+step: 500, Loss: 0.2736668884754181 Acc:1.0
+step: 600, Loss: 0.2780561149120331 Acc:1.0
+step: 700, Loss: 0.2677714228630066 Acc:1.0
+step: 800, Loss: 0.26794302463531494 Acc:1.0
+step: 900, Loss: 0.2730952501296997 Acc:1.0
+step: 1000, Loss: 0.26631981134414673 Acc:1.0
+step: 1100, Loss: 0.26666027307510376 Acc:1.0
+step: 1200, Loss: 0.2672395706176758 Acc:1.0
+step: 1300, Loss: 0.2658238112926483 Acc:1.0
+step: 1400, Loss: 0.26510149240493774 Acc:1.0
+step: 1500, Loss: 0.26725971698760986 Acc:1.0
+step: 1600, Loss: 0.2732671797275543 Acc:1.0
+step: 1700, Loss: 0.2803303599357605 Acc:1.0
+step: 1800, Loss: 0.26557815074920654 Acc:1.0
+step: 1900, Loss: 0.26682576537132263 Acc:1.0
+step: 2000, Loss: 0.27660077810287476 Acc:1.0
+step: 2100, Loss: 0.26847511529922485 Acc:1.0
+step: 2200, Loss: 0.2652776539325714 Acc:1.0
+step: 2300, Loss: 0.26747989654541016 Acc:1.0
+step: 2400, Loss: 0.2661079168319702 Acc:1.0
+step: 2500, Loss: 0.2651106119155884 Acc:1.0
+step: 2600, Loss: 0.26526516675949097 Acc:1.0
+step: 2700, Loss: 0.26560351252555847 Acc:1.0
+step: 2800, Loss: 0.26723697781562805 Acc:1.0
+step: 2900, Loss: 0.267165869474411 Acc:1.0
+step: 3000, Loss: 0.2662714421749115 Acc:1.0
+step: 3100, Loss: 0.2664254307746887 Acc:1.0
+step: 3200, Loss: 0.2704649567604065 Acc:1.0
+step: 3300, Loss: 0.2657550275325775 Acc:1.0
+step: 3400, Loss: 0.2653096914291382 Acc:1.0
+step: 3500, Loss: 0.2669476866722107 Acc:1.0
+step: 3600, Loss: 0.2696797549724579 Acc:1.0
+step: 3700, Loss: 0.26607197523117065 Acc:1.0
+step: 3800, Loss: 0.2672056555747986 Acc:1.0
+step: 3900, Loss: 0.26553529500961304 Acc:1.0
+step: 4000, Loss: 0.2688799500465393 Acc:1.0
+step: 4100, Loss: 0.26705145835876465 Acc:1.0
+step: 4200, Loss: 0.26590752601623535 Acc:1.0
+step: 4300, Loss: 0.2689440846443176 Acc:1.0
+step: 4400, Loss: 0.26659440994262695 Acc:1.0
+step: 4500, Loss: 0.26623067259788513 Acc:1.0
+step: 4600, Loss: 0.26551324129104614 Acc:1.0
+step: 4700, Loss: 0.26657363772392273 Acc:1.0
+step: 4800, Loss: 0.2656257152557373 Acc:1.0
+step: 4900, Loss: 0.26652395725250244 Acc:1.0
+training successfully ended.
+validating...
+validate data length:42
+acc: 0.8571428571428571
+precision: 0.8333333333333334
+recall: 0.9090909090909091
+F_score: 0.8695652173913043
+******fold 2******
+
+in cross val model path:/home/sjf/eegall/intermodel/modelsave8/Valence-norm-lr5e-05FACED10_11_5000_scebaseseed74fold_best_model.pth
+Training... train_data length:374
+step: 0, Loss: 0.265831857919693 Acc:1.0
+step: 100, Loss: 0.26550716161727905 Acc:1.0
+step: 200, Loss: 0.2645981013774872 Acc:1.0
+step: 300, Loss: 0.2660738229751587 Acc:1.0
+step: 400, Loss: 0.26496031880378723 Acc:1.0
+step: 500, Loss: 0.26670968532562256 Acc:1.0
+step: 600, Loss: 0.271980881690979 Acc:1.0
+step: 700, Loss: 0.26495683193206787 Acc:1.0
+step: 800, Loss: 0.26510605216026306 Acc:1.0
+step: 900, Loss: 0.2675633728504181 Acc:1.0
+step: 1000, Loss: 0.2660169005393982 Acc:1.0
+step: 1100, Loss: 0.26573964953422546 Acc:1.0
+step: 1200, Loss: 0.2656339704990387 Acc:1.0
+step: 1300, Loss: 0.2660888135433197 Acc:1.0
+step: 1400, Loss: 0.26473766565322876 Acc:1.0
+step: 1500, Loss: 0.2659447193145752 Acc:1.0
+step: 1600, Loss: 0.2649421989917755 Acc:1.0
+step: 1700, Loss: 0.2661714553833008 Acc:1.0
+step: 1800, Loss: 0.26559460163116455 Acc:1.0
+step: 1900, Loss: 0.2724095582962036 Acc:1.0
+step: 2000, Loss: 0.2685145437717438 Acc:1.0
+step: 2100, Loss: 0.26598793268203735 Acc:1.0
+step: 2200, Loss: 0.26670122146606445 Acc:1.0
+step: 2300, Loss: 0.2656327784061432 Acc:1.0
+step: 2400, Loss: 0.26474493741989136 Acc:1.0
+step: 2500, Loss: 0.2668377161026001 Acc:1.0
+step: 2600, Loss: 0.26497122645378113 Acc:1.0
+step: 2700, Loss: 0.2650797963142395 Acc:1.0
+step: 2800, Loss: 0.2658754289150238 Acc:1.0
+step: 2900, Loss: 0.2651069164276123 Acc:1.0
+step: 3000, Loss: 0.26498764753341675 Acc:1.0
+step: 3100, Loss: 0.2650182843208313 Acc:1.0
+step: 3200, Loss: 0.2656582295894623 Acc:1.0
+step: 3300, Loss: 0.26498717069625854 Acc:1.0
+step: 3400, Loss: 0.26449882984161377 Acc:1.0
+step: 3500, Loss: 0.26559239625930786 Acc:1.0
+step: 3600, Loss: 0.26499196887016296 Acc:1.0
+step: 3700, Loss: 0.26586708426475525 Acc:1.0
+step: 3800, Loss: 0.2659183442592621 Acc:1.0
+step: 3900, Loss: 0.26554858684539795 Acc:1.0
+step: 4000, Loss: 0.2653299868106842 Acc:1.0
+step: 4100, Loss: 0.26536351442337036 Acc:1.0
+step: 4200, Loss: 0.26802217960357666 Acc:1.0
+step: 4300, Loss: 0.2655254304409027 Acc:1.0
+step: 4400, Loss: 0.26602473855018616 Acc:1.0
+step: 4500, Loss: 0.26581138372421265 Acc:1.0
+step: 4600, Loss: 0.2659299969673157 Acc:1.0
+step: 4700, Loss: 0.2650223672389984 Acc:1.0
+step: 4800, Loss: 0.26416516304016113 Acc:1.0
+step: 4900, Loss: 0.2647300660610199 Acc:1.0
+training successfully ended.
+validating...
+validate data length:42
+acc: 1.0
+precision: 1.0
+recall: 1.0
+F_score: 1.0
+******fold 3******
+
+in cross val model path:/home/sjf/eegall/intermodel/modelsave8/Valence-norm-lr5e-05FACED10_11_5000_scebaseseed74fold_best_model.pth
+Training... train_data length:374
+step: 0, Loss: 0.2708434462547302 Acc:1.0
+step: 100, Loss: 0.26482588052749634 Acc:1.0
+step: 200, Loss: 0.26437482237815857 Acc:1.0
+step: 300, Loss: 0.2649215757846832 Acc:1.0
+step: 400, Loss: 0.2647382915019989 Acc:1.0
+step: 500, Loss: 0.2647896707057953 Acc:1.0
+step: 600, Loss: 0.26479974389076233 Acc:1.0
+step: 700, Loss: 0.2647431492805481 Acc:1.0
+step: 800, Loss: 0.2650405466556549 Acc:1.0
+step: 900, Loss: 0.265025794506073 Acc:1.0
+step: 1000, Loss: 0.2648187577724457 Acc:1.0
+step: 1100, Loss: 0.2688899040222168 Acc:1.0
+step: 1200, Loss: 0.26526135206222534 Acc:1.0
+step: 1300, Loss: 0.26427406072616577 Acc:1.0
+step: 1400, Loss: 0.26593318581581116 Acc:1.0
+step: 1500, Loss: 0.2671801447868347 Acc:1.0
+step: 1600, Loss: 0.2644100785255432 Acc:1.0
+step: 1700, Loss: 0.2657325863838196 Acc:1.0
+step: 1800, Loss: 0.26748526096343994 Acc:1.0
+step: 1900, Loss: 0.2651778757572174 Acc:1.0
+step: 2000, Loss: 0.2650700807571411 Acc:1.0
+step: 2100, Loss: 0.26447829604148865 Acc:1.0
+step: 2200, Loss: 0.26501399278640747 Acc:1.0
+step: 2300, Loss: 0.26460030674934387 Acc:1.0
+step: 2400, Loss: 0.26418954133987427 Acc:1.0
+step: 2500, Loss: 0.2645401656627655 Acc:1.0
+step: 2600, Loss: 0.26491641998291016 Acc:1.0
+step: 2700, Loss: 0.2644828259944916 Acc:1.0
+step: 2800, Loss: 0.26481926441192627 Acc:1.0
+step: 2900, Loss: 0.2655539810657501 Acc:1.0
+step: 3000, Loss: 0.2646218538284302 Acc:1.0
+step: 3100, Loss: 0.2646729350090027 Acc:1.0
+step: 3200, Loss: 0.2657254636287689 Acc:1.0
+step: 3300, Loss: 0.2647213637828827 Acc:1.0
+step: 3400, Loss: 0.26447421312332153 Acc:1.0
+step: 3500, Loss: 0.26487165689468384 Acc:1.0
+step: 3600, Loss: 0.2646545171737671 Acc:1.0
+step: 3700, Loss: 0.2663620710372925 Acc:1.0
+step: 3800, Loss: 0.26507556438446045 Acc:1.0
+step: 3900, Loss: 0.2669920325279236 Acc:1.0
+step: 4000, Loss: 0.2645632326602936 Acc:1.0
+step: 4100, Loss: 0.26595285534858704 Acc:1.0
+step: 4200, Loss: 0.2666385769844055 Acc:1.0
+step: 4300, Loss: 0.26586484909057617 Acc:1.0
+step: 4400, Loss: 0.2643768787384033 Acc:1.0
+step: 4500, Loss: 0.26715007424354553 Acc:1.0
+step: 4600, Loss: 0.266618549823761 Acc:1.0
+step: 4700, Loss: 0.2646498382091522 Acc:1.0
+step: 4800, Loss: 0.2653966248035431 Acc:1.0
+step: 4900, Loss: 0.2647811472415924 Acc:1.0
+training successfully ended.
+validating...
+validate data length:42
+acc: 1.0
+precision: 1.0
+recall: 1.0
+F_score: 1.0
+******fold 4******
+
+in cross val model path:/home/sjf/eegall/intermodel/modelsave8/Valence-norm-lr5e-05FACED10_11_5000_scebaseseed74fold_best_model.pth
+Training... train_data length:374
+step: 0, Loss: 0.268673300743103 Acc:1.0
+step: 100, Loss: 0.265142560005188 Acc:1.0
+step: 200, Loss: 0.26467806100845337 Acc:1.0
+step: 300, Loss: 0.265296995639801 Acc:1.0
+step: 400, Loss: 0.2643059194087982 Acc:1.0
+step: 500, Loss: 0.26496607065200806 Acc:1.0
+step: 600, Loss: 0.26437652111053467 Acc:1.0
+step: 700, Loss: 0.2649683952331543 Acc:1.0
+step: 800, Loss: 0.26571977138519287 Acc:1.0
+step: 900, Loss: 0.27243858575820923 Acc:1.0
+step: 1000, Loss: 0.264701247215271 Acc:1.0
+step: 1100, Loss: 0.26568707823753357 Acc:1.0
+step: 1200, Loss: 0.26433393359184265 Acc:1.0
+step: 1300, Loss: 0.26421818137168884 Acc:1.0
+step: 1400, Loss: 0.26430296897888184 Acc:1.0
+step: 1500, Loss: 0.26519086956977844 Acc:1.0
+step: 1600, Loss: 0.26578038930892944 Acc:1.0
+step: 1700, Loss: 0.26448407769203186 Acc:1.0
+step: 1800, Loss: 0.2655445635318756 Acc:1.0
+step: 1900, Loss: 0.2673293352127075 Acc:1.0
+step: 2000, Loss: 0.26785707473754883 Acc:1.0
+step: 2100, Loss: 0.2649472951889038 Acc:1.0
+step: 2200, Loss: 0.2666274309158325 Acc:1.0
+step: 2300, Loss: 0.26570141315460205 Acc:1.0
+step: 2400, Loss: 0.2645224332809448 Acc:1.0
+step: 2500, Loss: 0.26450785994529724 Acc:1.0
+step: 2600, Loss: 0.26432859897613525 Acc:1.0
+step: 2700, Loss: 0.2645682990550995 Acc:1.0
+step: 2800, Loss: 0.26448023319244385 Acc:1.0
+step: 2900, Loss: 0.2641592025756836 Acc:1.0
+step: 3000, Loss: 0.2645050883293152 Acc:1.0
+step: 3100, Loss: 0.2649177610874176 Acc:1.0
+step: 3200, Loss: 0.264349102973938 Acc:1.0
+step: 3300, Loss: 0.26508641242980957 Acc:1.0
+step: 3400, Loss: 0.26508545875549316 Acc:1.0
+step: 3500, Loss: 0.26472049951553345 Acc:1.0
+step: 3600, Loss: 0.26464247703552246 Acc:1.0
+step: 3700, Loss: 0.26563560962677 Acc:1.0
+step: 3800, Loss: 0.2648331820964813 Acc:1.0
+step: 3900, Loss: 0.2649936079978943 Acc:1.0
+step: 4000, Loss: 0.264931857585907 Acc:1.0
+step: 4100, Loss: 0.26566776633262634 Acc:1.0
+step: 4200, Loss: 0.2656867206096649 Acc:1.0
+step: 4300, Loss: 0.2647809386253357 Acc:1.0
+step: 4400, Loss: 0.26567476987838745 Acc:1.0
+step: 4500, Loss: 0.26503562927246094 Acc:1.0
+step: 4600, Loss: 0.2663976550102234 Acc:1.0
+step: 4700, Loss: 0.26576051115989685 Acc:1.0
+step: 4800, Loss: 0.2642447352409363 Acc:1.0
+step: 4900, Loss: 0.2664312422275543 Acc:1.0
+training successfully ended.
+validating...
+validate data length:42
+acc: 0.9523809523809523
+precision: 1.0
+recall: 0.9047619047619048
+F_score: 0.9500000000000001
+******fold 5******
+
+in cross val model path:/home/sjf/eegall/intermodel/modelsave8/Valence-norm-lr5e-05FACED10_11_5000_scebaseseed74fold_best_model.pth
+Training... train_data length:374
+step: 0, Loss: 0.2717949151992798 Acc:1.0
+step: 100, Loss: 0.2646501660346985 Acc:1.0
+step: 200, Loss: 0.2642679810523987 Acc:1.0
+step: 300, Loss: 0.2652096450328827 Acc:1.0
+step: 400, Loss: 0.2654135525226593 Acc:1.0
+step: 500, Loss: 0.2646406292915344 Acc:1.0
+step: 600, Loss: 0.26529964804649353 Acc:1.0
+step: 700, Loss: 0.264765202999115 Acc:1.0
+step: 800, Loss: 0.27162447571754456 Acc:1.0
+step: 900, Loss: 0.2658410966396332 Acc:1.0
+step: 1000, Loss: 0.26425087451934814 Acc:1.0
+step: 1100, Loss: 0.26461896300315857 Acc:1.0
+step: 1200, Loss: 0.264186292886734 Acc:1.0
+step: 1300, Loss: 0.2641737759113312 Acc:1.0
+step: 1400, Loss: 0.264217734336853 Acc:1.0
+step: 1500, Loss: 0.2650226652622223 Acc:1.0
+step: 1600, Loss: 0.26476773619651794 Acc:1.0
+step: 1700, Loss: 0.2661248743534088 Acc:1.0
+step: 1800, Loss: 0.26488566398620605 Acc:1.0
+step: 1900, Loss: 0.2658093571662903 Acc:1.0
+step: 2000, Loss: 0.26583942770957947 Acc:1.0
+step: 2100, Loss: 0.26756227016448975 Acc:1.0
+step: 2200, Loss: 0.2662406265735626 Acc:1.0
+step: 2300, Loss: 0.2687858045101166 Acc:1.0
+step: 2400, Loss: 0.2656167149543762 Acc:1.0
+step: 2500, Loss: 0.2649518847465515 Acc:1.0
+step: 2600, Loss: 0.26501479744911194 Acc:1.0
+step: 2700, Loss: 0.2649400234222412 Acc:1.0
+step: 2800, Loss: 0.26416531205177307 Acc:1.0
+step: 2900, Loss: 0.26445502042770386 Acc:1.0
+step: 3000, Loss: 0.2646176517009735 Acc:1.0
+step: 3100, Loss: 0.26444175839424133 Acc:1.0
+step: 3200, Loss: 0.2643202543258667 Acc:1.0
+step: 3300, Loss: 0.26501384377479553 Acc:1.0
+step: 3400, Loss: 0.26417064666748047 Acc:1.0
+step: 3500, Loss: 0.264521062374115 Acc:1.0
+step: 3600, Loss: 0.2650439143180847 Acc:1.0
+step: 3700, Loss: 0.26470625400543213 Acc:1.0
+step: 3800, Loss: 0.26471778750419617 Acc:1.0
+step: 3900, Loss: 0.2658251225948334 Acc:1.0
+step: 4000, Loss: 0.26463544368743896 Acc:1.0
+step: 4100, Loss: 0.2654384970664978 Acc:1.0
+step: 4200, Loss: 0.26492202281951904 Acc:1.0
+step: 4300, Loss: 0.2652544379234314 Acc:1.0
+step: 4400, Loss: 0.26430100202560425 Acc:1.0
+step: 4500, Loss: 0.26542583107948303 Acc:1.0
+step: 4600, Loss: 0.26464852690696716 Acc:1.0
+step: 4700, Loss: 0.2649136185646057 Acc:1.0
+step: 4800, Loss: 0.2645990550518036 Acc:1.0
+step: 4900, Loss: 0.264738529920578 Acc:1.0
+training successfully ended.
+validating...
+validate data length:42
+acc: 1.0
+precision: 1.0
+recall: 1.0
+F_score: 1.0
+******fold 6******
+
+in cross val model path:/home/sjf/eegall/intermodel/modelsave8/Valence-norm-lr5e-05FACED10_11_5000_scebaseseed74fold_best_model.pth
+Training... train_data length:374
+step: 0, Loss: 0.2717949151992798 Acc:1.0
+step: 100, Loss: 0.2646092474460602 Acc:1.0
+step: 200, Loss: 0.26418447494506836 Acc:1.0
+step: 300, Loss: 0.2645929157733917 Acc:1.0
+step: 400, Loss: 0.2655586004257202 Acc:1.0
+step: 500, Loss: 0.2651406228542328 Acc:1.0
+step: 600, Loss: 0.2645423114299774 Acc:1.0
+step: 700, Loss: 0.2682284116744995 Acc:1.0
+step: 800, Loss: 0.2668037414550781 Acc:1.0
+step: 900, Loss: 0.2648855745792389 Acc:1.0
+step: 1000, Loss: 0.2650746703147888 Acc:1.0
+step: 1100, Loss: 0.264867901802063 Acc:1.0
+step: 1200, Loss: 0.2649078667163849 Acc:1.0
+step: 1300, Loss: 0.2654263377189636 Acc:1.0
+step: 1400, Loss: 0.26550889015197754 Acc:1.0
+step: 1500, Loss: 0.2644818127155304 Acc:1.0
+step: 1600, Loss: 0.2650506794452667 Acc:1.0
+step: 1700, Loss: 0.2662412226200104 Acc:1.0
+step: 1800, Loss: 0.26447582244873047 Acc:1.0
+step: 1900, Loss: 0.26439669728279114 Acc:1.0
+step: 2000, Loss: 0.26634687185287476 Acc:1.0
+step: 2100, Loss: 0.2648036479949951 Acc:1.0
+step: 2200, Loss: 0.2647222578525543 Acc:1.0
+step: 2300, Loss: 0.2657836079597473 Acc:1.0
+step: 2400, Loss: 0.2646372616291046 Acc:1.0
+step: 2500, Loss: 0.26451072096824646 Acc:1.0
+step: 2600, Loss: 0.26471853256225586 Acc:1.0
+step: 2700, Loss: 0.26476937532424927 Acc:1.0
+step: 2800, Loss: 0.2651747167110443 Acc:1.0
+step: 2900, Loss: 0.26583412289619446 Acc:1.0
