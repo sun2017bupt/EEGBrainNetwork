@@ -4,30 +4,38 @@ This repository contains the source code, experiment logs, and results for our a
 
 ## 📁 Directory Overview
 
-- `/eegall/Abla/*.out`
-    
-    Contains training logs and prediction results for ablation studies and baseline comparisons.
-    
-- `/eegall/withlimits/*.txt`
-    
-    Includes text-based output logs of final prediction results under limited settings.
-    
-- `/eegall/data/`
-    
-    Stores essential data files including preprocessed EEG signals, selected frequency bands, and intermediate variables used during model construction.
-    
-- `/eegall/dataex/`
-    
-    Contains data used for plotting along with all visualization scripts and variable exports.
-    
-- `/eegall/intermodel/`
-    
-    Stores trained model checkpoint files and related parameter configurations.
-    
-- `/eegall/lossre/`
-    
-    Records the training loss values throughout the learning process.
-    
+- `home/sjf/eegall/Abla/*.out`  
+  Contains training logs and prediction results for ablation studies and baseline comparisons.
+
+- `home/sjf/eegall/withlimits/*.txt`  
+  Includes text-based output logs of final prediction results under limited settings.
+
+- `home/sjf/eegall/data/`  
+  Stores essential data files including preprocessed EEG signals, selected frequency bands, and intermediate variables used during model construction.
+
+- `home/sjf/eegall/dataex/`  
+  Contains data used for plotting along with all visualization scripts and variable exports.
+
+- `home/sjf/eegall/intermodel/`  
+  Stores trained model checkpoint files and related parameter configurations.
+
+- `home/sjf/eegall/lossre/`  
+  Records the training loss values throughout the learning process.
+
+- `home/sjf/eegall/predictionreswithdifferentparams/`  
+  Contains model prediction results generated using different parameter settings for comparative analysis.
+
+- `home/sjf/eegall/searchhyper/`  
+  Contains `.sh` scripts used for automated hyperparameter search and batch experiments.
+
+- **Core Scripts in `home/sjf/eegall/`**  
+  This directory also contains the core implementation, including data preprocessing, model definition, training scripts, and evaluation tools:
+  - `main.py`: The main entry point for training and evaluation.
+  - `model.py`, `tgmodel.py`, `valmodel.py`, `fremodel.py`: Core model architectures.
+  - `dataconstrut.py`, `EEGData.py`, `faceddata.py`: EEG data loading and preprocessing modules.
+  - `customloss.py`: Custom loss functions used during training.
+  - `analysismodel.ipynb`, `explainmodel.ipynb`: Jupyter notebooks for model analysis and interpretability.
+  - `requirements.txt`: Python package dependencies.
 
 ## 🧪 Experimental Settings
 
@@ -39,7 +47,6 @@ We focus on **subject-dependent** EEG emotion recognition. Due to varying sampli
 Other key settings:
 
 - Learning rate: `5e-5`
-- Training iterations: `5000`
 - Optimizer: Adam
 - Model parameters are initialized using **Xavier uniform initialization**
 - No specific random seed is set
