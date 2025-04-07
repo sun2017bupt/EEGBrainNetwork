@@ -272,7 +272,7 @@ def validate(model, device, base_val_data, harm_val_data, val_graph, val_labels,
     print(f'precision: {precision}')
     print(f'recall: {recall}')
     print(f'F_score: {f_score}')
-    # torch.save(val_labels,'/home/sjf/eegall/nolimits/FACED/valence_val_labels.pt')
+    # torch.save(val_labels,'/eegall/nolimits/FACED/valence_val_labels.pt')
     return acc, precision, recall, f_score
 
 def freq_validate(model, device, ng1_data, ng2_data, ng3_data, ng4_data, g_data, val_graph, val_labels, batch_size):
@@ -498,7 +498,7 @@ def cross_validation(args, subject, base_data, harm_data, graph, labels, seed, d
         harm_val_data = torch.tensor(harm_val_data)
 
         # Model define
-        model_dir = '/home/sjf/eegall/intermodel/'
+        model_dir = '/eegall/intermodel/'
         if args.norm:
             model_path = "norm-"+"lr"+str(args.lr)+args.data+str(args.kfold)+'_'+str(args.batch)+'_'+str(args.maxiter) + '_' +args.loss + args.graph + 'seed'+str(args.seed)+'fold_best_model.pth'
         else:
@@ -589,12 +589,12 @@ def cross_validation(args, subject, base_data, harm_data, graph, labels, seed, d
     if args.modeldir:
         filename = str(args.modeldir)+filename
     if args.limit:
-        filepath = '/home/sjf/eegall/withlimits/'+filename
+        filepath = '/eegall/withlimits/'+filename
     else:
-        filepath = '/home/sjf/eegall/nolimits/'+filename
+        filepath = '/eegall/nolimits/'+filename
 
     # all loss record
-    los_path = '/home/sjf/eegall/lossre/'
+    los_path = '/eegall/lossre/'
     loss_name = "lr"+str(args.lr)+args.data+str(args.kfold)+'_'+str(args.batch)+'_'+str(args.maxiter) + '_' +args.loss + args.graph + 'seed'+str(args.seed)
     if args.tylabel == 'Valence':
         loss_name = "Valence-"+loss_name
@@ -627,7 +627,7 @@ def cross_validation(args, subject, base_data, harm_data, graph, labels, seed, d
         pass
     else:
         tnac_filename = "CF"+tnac_filename
-    tnac_path = "/home/sjf/eegall/results/"+tnac_filename
+    tnac_path = "/eegall/results/"+tnac_filename
     torch.save(all_train_acc, tnac_path)
   
 
@@ -718,7 +718,7 @@ def freq_cross_validation(args, subject, ng1_data, ng2_data, ng3_data, ng4_data,
 
 
         # Model define
-        model_dir = '/home/sjf/eegall/intermodel/'
+        model_dir = '/eegall/intermodel/'
         if args.norm:
             model_path = "norm-"+"lr"+str(args.lr)+args.data+str(args.kfold)+'_'+str(args.batch)+'_'+str(args.maxiter) + '_' +args.loss + args.graph + 'seed'+str(args.seed)+'fold_best_model.pth'
         else:
@@ -805,9 +805,9 @@ def freq_cross_validation(args, subject, ng1_data, ng2_data, ng3_data, ng4_data,
         filename = "FRE"+"CF"+filename
     filename = str(args.freph) + filename
     if args.limit:
-        filepath = '/home/sjf/eegall/withlimits/'+filename
+        filepath = '/eegall/withlimits/'+filename
     else:
-        filepath = '/home/sjf/eegall/nolimits/'+filename
+        filepath = '/eegall/nolimits/'+filename
 
     with open(filepath, 'a') as f:
         f.write(f'\nsubject {subject}: Avgacc: {avg_acc}, Avgfscore: {avg_f_score}, Avg Recall:{avg_recall}, Avg Precision:{avg_precision} \n')
@@ -822,7 +822,7 @@ def freq_cross_validation(args, subject, ng1_data, ng2_data, ng3_data, ng4_data,
     else:
         tnac_filename = "FRE"+"CF"+tnac_filename
     tnac_filename = str(args.freph)+tnac_filename
-    tnac_path = "/home/sjf/eegall/results/"+tnac_filename
+    tnac_path = "/eegall/results/"+tnac_filename
     torch.save(all_train_acc, tnac_path)
 
     return fold_best_model, max_acc, avg_acc, avg_f_score, max_f_score
@@ -857,26 +857,26 @@ if __name__ == '__main__':
     if args.data == 'DEAP':
         print("--------- DEAP DATA ---------\n")
         if args.freq == 'BH':
-            base_x = torch.load('/home/sjf/eegall/data/DEAP/all_base1_de_features.pt').float()
-            harm_x = torch.load('/home/sjf/eegall/data/DEAP/all_harmon1_de_features.pt').float()
-            all_labels = torch.load('/home/sjf/eegall/data/DEAP/all_1labels.pt')
-            base_graph = torch.load('/home/sjf/eegall/data/DEAP/base1_graph.pt')
-            harm_graph = torch.load('/home/sjf/eegall/data/DEAP/harm1_graph.pt')
+            base_x = torch.load('/eegall/data/DEAP/all_base1_de_features.pt').float()
+            harm_x = torch.load('/eegall/data/DEAP/all_harmon1_de_features.pt').float()
+            all_labels = torch.load('/eegall/data/DEAP/all_1labels.pt')
+            base_graph = torch.load('/eegall/data/DEAP/base1_graph.pt')
+            harm_graph = torch.load('/eegall/data/DEAP/harm1_graph.pt')
             base_graph = torch.tensor(base_graph, dtype=torch.float)
             harm_graph = torch.tensor(harm_graph, dtype=torch.float)
         else:
-            all_features = torch.load('/home/sjf/eegall/data/DEAP/all_fre_features.pt')
+            all_features = torch.load('/eegall/data/DEAP/all_fre_features.pt')
             delta_features = all_features[:,0,:,:,:]
             theta_features = all_features[:,1,:,:,:]
             alpha_features = all_features[:,2,:,:,:]
             beta_features = all_features[:,3,:,:,:]
             gamma_features = all_features[:,4,:,:,:]
-            all_labels = torch.load('/home/sjf/eegall/data/DEAP/all_fre_deaplabels.pt')
-            delta_graph = torch.load('/home/sjf/eegall/data/DEAP/delta_graph.pt')
-            theta_graph = torch.load('/home/sjf/eegall/data/DEAP/theta_graph.pt')
-            alpha_graph = torch.load('/home/sjf/eegall/data/DEAP/alpha_graph.pt')
-            beta_graph = torch.load('/home/sjf/eegall/data/DEAP/beta_graph.pt')
-            gamma_graph = torch.load('/home/sjf/eegall/data/DEAP/gamma_graph.pt')
+            all_labels = torch.load('/eegall/data/DEAP/all_fre_deaplabels.pt')
+            delta_graph = torch.load('/eegall/data/DEAP/delta_graph.pt')
+            theta_graph = torch.load('/eegall/data/DEAP/theta_graph.pt')
+            alpha_graph = torch.load('/eegall/data/DEAP/alpha_graph.pt')
+            beta_graph = torch.load('/eegall/data/DEAP/beta_graph.pt')
+            gamma_graph = torch.load('/eegall/data/DEAP/gamma_graph.pt')
             delta_graph = torch.tensor(delta_graph, dtype=torch.float)
             theta_graph = torch.tensor(theta_graph, dtype=torch.float)
             alpha_graph = torch.tensor(alpha_graph, dtype=torch.float)
@@ -888,16 +888,16 @@ if __name__ == '__main__':
     elif args.data=='FACED':
         print("--------- FACED DATA ---------\n")
         if args.freq == 'BH':
-            # base_x = torch.load('/home/sjf/eegall/data/FACED/all_nwrebase_de_features.pt')
-            # harm_x = torch.load('/home/sjf/eegall/data/FACED/all_nwreharmon_de_features.pt')
-            # all_labels = torch.load('/home/sjf/eegall/data/FACED/all_nwrelabels.pt')
-            # base_graph = torch.load('/home/sjf/eegall/data/FACED/nwrebase_graph.pt')
-            # harm_graph = torch.load('/home/sjf/eegall/data/FACED/nwreharm_graph.pt')
-            base_x = torch.load('/home/sjf/eegall/data/all_8nwrebase_de_features.pt')
-            harm_x = torch.load('/home/sjf/eegall/data/all_8nwreharmon_de_features.pt')
-            all_labels = torch.load('/home/sjf/eegall/data/all_8nwrelabels.pt')
-            base_graph = torch.load('/home/sjf/eegall/data/8nwrebase_graph.pt')
-            harm_graph = torch.load('/home/sjf/eegall/data/8nwreharm_graph.pt')
+            # base_x = torch.load('/eegall/data/FACED/all_nwrebase_de_features.pt')
+            # harm_x = torch.load('/eegall/data/FACED/all_nwreharmon_de_features.pt')
+            # all_labels = torch.load('/eegall/data/FACED/all_nwrelabels.pt')
+            # base_graph = torch.load('/eegall/data/FACED/nwrebase_graph.pt')
+            # harm_graph = torch.load('/eegall/data/FACED/nwreharm_graph.pt')
+            base_x = torch.load('/eegall/data/all_8nwrebase_de_features.pt')
+            harm_x = torch.load('/eegall/data/all_8nwreharmon_de_features.pt')
+            all_labels = torch.load('/eegall/data/all_8nwrelabels.pt')
+            base_graph = torch.load('/eegall/data/8nwrebase_graph.pt')
+            harm_graph = torch.load('/eegall/data/8nwreharm_graph.pt')
 
             base_graph = torch.tensor(base_graph, dtype=torch.float)
             harm_graph = torch.tensor(harm_graph, dtype=torch.float)
@@ -905,18 +905,18 @@ if __name__ == '__main__':
 
 
         else:
-            all_features = torch.load('/home/sjf/eegall/data/FACED/all_fre_features.pt')
+            all_features = torch.load('/eegall/data/FACED/all_fre_features.pt')
             delta_features = all_features[:,0,:,:,:]
             theta_features = all_features[:,1,:,:,:]
             alpha_features = all_features[:,2,:,:,:]
             beta_features = all_features[:,3,:,:,:]
             gamma_features = all_features[:,4,:,:,:]
-            all_labels = torch.load('/home/sjf/eegall/data/FACED/all_fre_facedlabels.pt')
-            delta_graph = torch.load('/home/sjf/eegall/data/FACED/delta_graph.pt')
-            theta_graph = torch.load('/home/sjf/eegall/data/FACED/theta_graph.pt')
-            alpha_graph = torch.load('/home/sjf/eegall/data/FACED/alpha_graph.pt')
-            beta_graph = torch.load('/home/sjf/eegall/data/FACED/beta_graph.pt')
-            gamma_graph = torch.load('/home/sjf/eegall/data/FACED/gamma_graph.pt')
+            all_labels = torch.load('/eegall/data/FACED/all_fre_facedlabels.pt')
+            delta_graph = torch.load('/eegall/data/FACED/delta_graph.pt')
+            theta_graph = torch.load('/eegall/data/FACED/theta_graph.pt')
+            alpha_graph = torch.load('/eegall/data/FACED/alpha_graph.pt')
+            beta_graph = torch.load('/eegall/data/FACED/beta_graph.pt')
+            gamma_graph = torch.load('/eegall/data/FACED/gamma_graph.pt')
             delta_graph = torch.tensor(delta_graph, dtype=torch.float)
             theta_graph = torch.tensor(theta_graph, dtype=torch.float)
             alpha_graph = torch.tensor(alpha_graph, dtype=torch.float)
@@ -950,7 +950,7 @@ if __name__ == '__main__':
 
     # Fou = create_fourier_matrix(args.batch)
      # Model define
-    model_dir = '/home/sjf/eegall/intermodel/'
+    model_dir = '/eegall/intermodel/'
     if args.norm:
         model_path = "norm-"+"lr"+str(args.lr)+args.data+str(args.kfold)+'_'+str(args.batch)+'_'+str(args.maxiter) + '_' +args.loss + args.graph + 'seed'+str(args.seed)+'fold_best_model.pth'
     else:
@@ -1096,9 +1096,9 @@ if __name__ == '__main__':
         filename1 = str(args.modeldir)+filename1
     # filename1 = str(args.freph) + filename1
     if args.limit:
-        filepath = '/home/sjf/eegall/withlimits/'+filename1
+        filepath = '/eegall/withlimits/'+filename1
     else:
-        filepath = '/home/sjf/eegall/nolimits/'+filename1
+        filepath = '/eegall/nolimits/'+filename1
 
     with open(filepath, 'a') as f:
         if len(all_max_acc) == 0:
@@ -1109,9 +1109,9 @@ if __name__ == '__main__':
         # f.write(f'Max acc:{max_acc}, Max f score:{max_f_score}\n')
     
     if args.limit:
-        directory = '/home/sjf/eegall/withlimits/'
+        directory = '/eegall/withlimits/'
     else:
-        directory = '/home/sjf/eegall/nolimits/'
+        directory = '/eegall/nolimits/'
 
     if args.data == 'DEAP':
         filename = args.data+str(args.kfold)+'_'+str(args.batch)+'_'+str(args.maxiter) + '_' +args.loss + args.graph+'seed'+str(args.seed) + '_trained_models.pt'
