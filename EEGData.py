@@ -23,11 +23,11 @@ class CustomEEGDataset(Dataset):
         return base_x, harm_x, label, base_graph, harm_graph
 
 # 文件路径
-base_x_path = '/home/sjf/eegall/data/DEAP/all_base1_de_features.pt'
-harm_x_path = '/home/sjf/eegall/data/DEAP/all_harmon1_de_features.pt'
-labels_path = '/home/sjf/eegall/data/DEAP/all_1labels.pt'
-base_graph_path = '/home/sjf/eegall/data/DEAP/base1_graph.pt'
-harm_graph_path = '/home/sjf/eegall/data/DEAP/harm1_graph.pt'
+base_x_path = '/eegall/data/DEAP/all_base1_de_features.pt'
+harm_x_path = '/eegall/data/DEAP/all_harmon1_de_features.pt'
+labels_path = '/eegall/data/DEAP/all_1labels.pt'
+base_graph_path = '/eegall/data/DEAP/base1_graph.pt'
+harm_graph_path = '/eegall/data/DEAP/harm1_graph.pt'
 
 # 创建数据集
 dataset = CustomEEGDataset(base_x_path, harm_x_path, labels_path, base_graph_path, harm_graph_path)
